@@ -14,7 +14,7 @@ class BankDetail(Base):
     def __init__(self, bk_dtl_id=None, pers_id=None, acct_holder=None, iban_num=None, bic_code=None):
 
         if bk_dtl_id is None:
-            self.bk_dtl_id = str(uuid.uuid4())
+            self.bk_dtl_id = str(uuid.uuid4()) #why str?
         else:
             self.bk_dtl_id = bk_dtl_id
 
