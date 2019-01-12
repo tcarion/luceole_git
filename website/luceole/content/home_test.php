@@ -7,7 +7,10 @@
        $path .="/luceole/content/header.php";
        include_once($path);
     ?>
+    je suis stupide.
   </head>
+
+
 
   <body>
 
