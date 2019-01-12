@@ -2,13 +2,20 @@
 <html lang="en">
   <head>
     <title>Accueil</title>
-    <?php include 'header.php';?>
+    <?php
+       $path = $_SERVER['DOCUMENT_ROOT'];
+       $path .="/luceole/content/header.php";
+       include_once($path);
+    ?>
   </head>
 
   <body>
 
     <div class="container">
-        <?php include 'nav.php';?>
+      <?php
+         $path = constant('DOC_ROOT')."/luceole/content/nav.php";
+         include_once($path);
+      ?>
 
       <div class="jumbotron">
         <h1>Navbar example</h1>
@@ -18,6 +25,9 @@
         </p>
       </div>
     </div> <!-- /container -->
-    <?php include 'footer.php';?>
+    <<?php
+       $path = constant('DOC_ROOT')."/luceole/content/footer.php";
+       include_once($path);
+    ?>
   </body>
 </html>
