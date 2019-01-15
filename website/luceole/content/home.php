@@ -72,51 +72,50 @@
           </div>
         </div>
       </div>
-        <!-- Col3 : Bandant gauche vertical commun a toutes les pages (evenements, articles, liens...) -->
-        <div class="col-lg-3 border-primary">
-          <!-- Calendrier des évènements à venir -->
-          <div class="row" style="background=white">
+      <!-- Col3 : Bandant gauche vertical commun a toutes les pages (evenements, articles, liens...) -->
+      <div class="col-lg-3 border-primary">
+        <!-- Calendrier des évènements à venir -->
+        <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
+          <div class="col-lg-12">
             <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=samuel.courtois93%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FLuxembourg"
-            style="border-width:0; padding-top:15px;" height="400" frameborder="0" scrolling="yes"></iframe>
-          </div>
-          <!-- Actualité en rapport avec Lucéole, développement durable, etc -->
-          <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
-            <div class="col-lg-12">
-              <div class="row">
-                <div style="font-weight: bold">
-                  Article 1
-                </div>
-                <p id="article1_suite" style="display:None">
-                  Suite de l'article 1
-                </p>
-                <p>
-                  <a id="seeMore" onclick="toggleSeeMore('article1_suite')" href="javascript:void(0);">See More</a>
-                </p>
-              </div >
-            </div >
-          </div >
-
-          <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
-            <div class="col-lg-12">
-              <div class="row">
-                <div style="font-weight: bold">
-                  Article 2
-                </div>
-
-                <p id="article2_suite" style="display:None">
-                  Suite de l'article 2
-                </p>
-                <br>
-                <a id="seeMore" onclick="toggleSeeMore('article2_suite')" href="javascript:void(0);">See More</a>
-              </div >
-            </div >
-          </div >
-          <!-- Liens utiles en rapport avec Lucéole, développement durable, énergies, etc -->
-          <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
-            htrhkl
+            style="border-width:0; padding-top:0px;" width="100%" height="400" frameborder="0" scrolling="yes"></iframe>
           </div>
         </div>
+        <!-- Actualité en rapport avec Lucéole, développement durable, etc -->
+
+        <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
+          <div class="col-lg-12">
+            <div style="font-weight: bold">
+              Article 1
+            </div>
+            <p id="article1_suite" style="display:None">
+              Suite de l'article 1
+            </p>
+            <p>
+              <a id="seeMore" onclick="toggleSeeMore('article1_suite')" href="javascript:void(0);">See More</a>
+            </p>
+          </div >
+        </div >
+
+        <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
+          <div class="col-lg-12">
+            <div style="font-weight: bold">
+              Article 2
+            </div>
+
+            <p id="article2_suite" style="display:None">
+              Suite de l'article 2
+            </p>
+            <a id="seeMore" onclick="toggleSeeMore('article2_suite')" href="javascript:void(0);">See More</a>
+          </div >
+        </div >
+
+        <!-- Liens utiles en rapport avec Lucéole, développement durable, énergies, etc -->
+        <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
+          htrhkl
+        </div>
       </div>
+    </div>
 
     <!-- <div class="jumbotron">
     <h1>Navbar example</h1>
