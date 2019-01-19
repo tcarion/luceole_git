@@ -6,10 +6,14 @@
 <meta name="author" content="">
 <link rel="icon" href="../../favicon.ico">
 
+<<<<<<< HEAD
 <script src="<?php echo constant('ROOT_URL'); ?>luceole/script/jquery.js">
 </script>
 
 <script src="<?php echo constant('ROOT_URL'); ?>luceole/script/js_handler.js">
+=======
+<script src="<?php echo constant('ROOT_URL'); ?>luceole/script/toggleSeeMore.js">
+>>>>>>> 971807cd7a2e005ae0cbfe70f5957e5aab42ea36
 </script>
 
 <!-- Bootstrap core CSS -->

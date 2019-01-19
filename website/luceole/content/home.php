@@ -4,8 +4,10 @@
   <title>Accueil</title>
   <?php
   $path = $_SERVER['DOCUMENT_ROOT'];
-  $path .="/luceole/content/header.php";
+  $path .= "/php_config.php";
   include_once($path);
+  $path1 = get_headers(constant('ROOT_URL')."index.php?page=header&mode=php",1);
+  include_once($path1['Location']);
   ?>
 </head>
 
@@ -13,8 +15,13 @@
 
   <div class="container">
     <?php
-    $path = constant('DOC_ROOT')."/luceole/content/nav.php";
-    include_once($path);
+    //$path = constant('DOC_ROOT')."/luceole/content/nav.php";
+    //include_once($path);
+    //echo constant('ROOT_URL')."index.php?page=home";
+    $path = get_headers(constant('ROOT_URL')."index.php?page=nav&mode=php",1);
+    //echo $output['Location'];
+    include_once($path['Location']);
+    //print_r($output);
     ?>
     <!-- Module page d'Accueil -->
     <!-- Row 1 : contenu sauf navbar et footer -->
@@ -126,8 +133,8 @@
             </div> <!-- main row -->
           </div> <!-- /container -->
           <?php
-          $path = constant('DOC_ROOT')."/luceole/content/footer.php";
-          include_once($path);
+          $path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
+          include_once($path['Location']);
           ?>
         </body>
         </html>
