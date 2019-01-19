@@ -3,7 +3,7 @@
 </div>
 
 <nav class="navbar rounded navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Accueil</a>
+  <a class="navbar-brand" href="<?php echo constant('ROOT_URL'); ?>index.php?page=home&mode=html" target="_top">Accueil</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -17,12 +17,11 @@
           La Coopérative
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_carte_id&mode=html" target="_top">Carte d'identité</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=vision_globale" target="_top">Vision Globale</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=missions" target="_top">Missions</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=valeurs" target="_top">Valeurs</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=reseau_luceole" target="_top">Le réseau Lucéole</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=gouvernance" target="_top">Gouvernance</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_carte_id&mode=html" target="_top">Qui sommes-nous ?</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_vis_val" target="_top">Visions & Valeurs</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_ca" target="_top">Le Conseil d'administration</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_statuts" target="_top">Statuts</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_roi" target="_top">ROI</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -30,10 +29,11 @@
           Projets
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=habay-la-neuve" target="_top">Habay-la-Neuve</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=fauvillers" target="_top">Fauvillers</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=hose" target="_top">Hose</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=autres" target="_top">Autres</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_habay" target="_top">Eolien - Habay</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_fauvillers" target="_top">Eolien - Fauvillers</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_arlon_vds" target="_top">Eolien - Arlon - VDS</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_nantimont" target="_top">Eolien - Nantimont</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_hydro_sambre" target="_top">Hydraulique - Sambre & Ourthe</a>
         </div>
       </li>
       <li class="nav-item">
