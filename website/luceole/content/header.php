@@ -13,7 +13,11 @@
    include_once($path);
 ?>
 
-<script src="<?php echo constant('ROOT_URL'); ?>luceole/script/toggleSeeMore.js">
+<script src="<?php echo constant('ROOT_URL'); ?>luceole/script/jquery.js">
+</script>
+
+
+<script src="<?php echo constant('ROOT_URL'); ?>luceole/script/js_handler.js">
 </script>
 
 <!-- Bootstrap core CSS -->
