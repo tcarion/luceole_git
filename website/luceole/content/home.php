@@ -25,7 +25,6 @@
     ?>
     <!-- Module page d'Accueil -->
     <!-- Row 1 : contenu sauf navbar et footer -->
-    <br>
     <div class="row">
       <!-- Col9 : Contenu propre a chaque page (different sur chaque page)-->
       <div class="col-lg-9 border-danger">
@@ -71,70 +70,147 @@
               </div> <!-- Row carousel -->
 
               <!-- Page d'accueil: Modules pour articles et autres -->
-              <div class="row">
-                <div class="col-lg-4">
+              <div class="row card-row">
+                <div class="col-lg-4" style="padding-right:5px;">
                   <div class="card">
-                    <img class="card-img-top" src="<?php echo constant('ROOT_URL'); ?>index.php?page=header_logo&mode=html" alt="Card image cap">
+                    <div class="view overlay">
+                      <img class="card-img-top" src="<?php echo constant('ROOT_URL'); ?>index.php?page=header_logo&mode=html" alt="Card image cap">
+                      <a>
+                        <div class="mask rgba-white-slight"></div>
+                      </a>
+                    </div>
                     <div class="card-body">
-                      <h5 class="card-title">Qui sommes-nous?</h5>
+                      <!-- Title -->
+                      <h6 class="card-title">Qui sommes-nous?</h6>
+                      <hr>
+                      <!-- Text -->
                       <p class="card-text">Une société coopérative est une entreprise dont la propriété est collective et où
                         le pouvoir est exercé démocratiquement par un groupe de personnes associées volontairement pour satisfaire
-                        leurs aspirations et besoins économiques, sociaux et culturels communs.</p>
-                        <a class="btn btn-primary" href="<?php echo constant('ROOT_URL'); ?>index.php?page=vision_globale&mode=html">En savoir plus</a>
-                      </div>
-                    </div>
-                  </div> <!-- col-lg-4 for card 1 -->
-                </div> <!-- row for cards -->
-              </div> <!-- col-lg-9 -->
+                        leurs aspirations et besoins économiques, sociaux et culturels communs.
+                      </p>
+                      <!-- Link -->
+                      <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=vision_globale&mode=html" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
 
-              <!-- Col3 : Bandant gauche vertical commun a toutes les pages (evenements, articles, liens...) -->
-              <div class="col-lg-3 border-primary">
-                <!-- Calendrier des évènements à venir -->
-                <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
-                  <div class="col-lg-12">
-                    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=samuel.courtois93%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FLuxembourg"
-                    style="border-width:0; padding-top:0px;" width="100%" height="400" frameborder="0" scrolling="yes"></iframe>
+                    </div>
+                  </div>
+                </div> <!-- col-lg-4 for card 1 -->
+                <div class="col-lg-4" style="padding-right:5px; padding-left:5px;">
+                  <div class="card">
+                    <div class="view overlay">
+                      <img class="card-img-top" src="<?php echo constant('ROOT_URL'); ?>index.php?page=rescoop_logo&mode=html" alt="Card image cap">
+                      <a>
+                        <div class="mask rgba-white-slight"></div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <!-- Title -->
+                      <h6 class="card-title">Valeurs de Lucéole</h6>
+                      <hr>
+                      <!-- Text -->
+                      <p class="card-text">La coopérative Lucéole scrl n’est pas vouée principalement à l’enrichissement de ses associés,
+                        lesquels ne recherchent qu’un bénéfice patrimonial limité. Lucéole scrl cherchera plutôt à favoriser la
+                      </p>
+                      <!-- Link -->
+                      <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=vision_globale&mode=html" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
+
+                    </div>
+                  </div>
+                </div> <!-- col-lg-4 for card 2 -->
+                <div class="col-lg-4" style="padding-left:5px;">
+                  <div class="card">
+                    <div class="view overlay">
+                      <img class="card-img-top" src="<?php echo constant('ROOT_URL'); ?>index.php?page=cociter_logo&mode=html" alt="Card image cap">
+                      <a>
+                        <div class="mask rgba-white-slight"></div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <!-- Title -->
+                      <h6 class="card-title">Cociter</h6>
+                      <hr>
+                      <!-- Text -->
+                      <p class="card-text">Nos tarifs servent uniquement à couvrir les coûts réels, dont l’achat de
+                        l’électricité verte produite par les coopératives associées. Cette politique modérée nous permet
+                        de proposer des prix compétitifs pour les coopérateurs des coopératives associées.
+                      </p>
+                      <!-- Link -->
+                      <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=vision_globale&mode=html" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
+
+                    </div>
+                  </div>
+                </div> <!-- col-lg-4 for card 3 -->
+              </div> <!-- row for cards -->
+            </div> <!-- col-lg-9 -->
+
+            <!-- Col3 : Bandant gauche vertical commun a toutes les pages (evenements, articles, liens...) -->
+            <div class="col-lg-3 border-primary">
+              <!-- Calendrier des évènements à venir -->
+              <!-- <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
+                <div class="col-lg-12">
+                  <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=samuel.courtois93%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FLuxembourg"
+                  style="border-width:0; padding-top:0px;" width="100%" height="400" frameborder="0" scrolling="yes"></iframe>
+                </div>
+              </div> -->
+              <!-- Actualité en rapport avec Lucéole, développement durable, etc -->
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Article 1</h5>
+                      <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                      <p class="card-text">Debut article 1</p>
+                      <p id="article1_suite" class="card-text" style="display:None">Suite de l'article 1</p>
+                      <p class="card-text">
+                        <a id="seeMore1" onclick="toggleSeeMore('article1_suite','1')" href="javascript:void(0);" class="card-link">See more</a>
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <!-- Actualité en rapport avec Lucéole, développement durable, etc -->
+              </div>
 
-                <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
-                  <div class="col-lg-12">
-                    <div style="font-weight: bold">
-                      Article 1
+              <!-- <div class="row">
+                <div class="col-lg-12" style="background-color:white; border-radius: 5px;">
+                  <div style="font-weight: bold">
+                    Article 1
+                  </div>
+                  <p id="article1_suite" style="display:None">
+                    Suite de l'article 1
+                  </p>
+                  <p>
+                    <a id="seeMore1" onclick="toggleSeeMore('article1_suite','1')" href="javascript:void(0);">See More</a>
+                  </p>
+                </div>
+              </div> -->
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Article 2</h5>
+                      <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                      <p class="card-text">Debut article 2</p>
+                      <p id="article2_suite" class="card-text" style="display:None">Suite de l'article 2</p>
+                      <p class="card-text">
+                        <a id="seeMore2" onclick="toggleSeeMore('article2_suite','2')" href="javascript:void(0);" class="card-link">See more</a>
+                      </p>
                     </div>
-                    <p id="article1_suite" style="display:None">
-                      Suite de l'article 1
-                    </p>
-                    <p>
-                      <a id="seeMore1" onclick="toggleSeeMore('article1_suite','1')" href="javascript:void(0);">See More</a>
-                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
-                  <div class="col-lg-12">
-                    <div style="font-weight: bold">
-                      Article 2
-                    </div>
-
-                    <p id="article2_suite" style="display:None">
-                      Suite de l'article 2
-                    </p>
-                    <a id="seeMore2" onclick="toggleSeeMore('article2_suite','2')" href="javascript:void(0);">See More</a>
-                  </div >
+              <!-- Liens utiles en rapport avec Lucéole, développement durable, énergies, etc -->
+              <div class="row">
+                <div class="col-lg-12">
+                  fdjslfqm
                 </div >
+              </div>
+            </div> <!-- col-lg-3 -->
+          </div> <!-- main row -->
+        </div> <!-- /container -->
 
-                <!-- Liens utiles en rapport avec Lucéole, développement durable, énergies, etc -->
-                <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
-                  htrhkl
-                </div>
-              </div> <!-- col-lg-3 -->
-            </div> <!-- main row -->
-          </div> <!-- /container -->
-          <?php
-          $path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
-          include_once($path['Location']);
-          ?>
-        </body>
-        </html>
+        <?php
+        $path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
+        include_once($path['Location']);
+        ?>
+      </body>
+      </html>

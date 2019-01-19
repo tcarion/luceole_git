@@ -16,6 +16,7 @@ $array = ["nav" => "content/nav.php",
           "home" => "content/home.php",
           "header_logo" => "files/luceole-header-logo.jpg",
           "rescoop_logo" => "files/rescoop.png",
+<<<<<<< HEAD
           "cociter_logo" => "files/cociter.jpg",
           "vds_logo" => "files/vds.png",
           "apere_logo" => "files/apere-logo.png",
@@ -26,6 +27,9 @@ $array = ["nav" => "content/nav.php",
           "coop_statuts" => "content/la_cooperative/statuts.php",
           "coop_roi" => "content/la_cooperative/roi.php",
           "coop_ca" => "content/la_cooperative/conseil_administration.php"];
+=======
+          "cociter_logo" => "files/cociter.jpg"];
+>>>>>>> 531a390d7fc957c42bbee2af30f1d52bca33e6e0
 
 $file_location = "test";
 
