@@ -6,13 +6,6 @@
 <meta name="author" content="">
 <link rel="icon" href="../../favicon.ico">
 
-
-<?php
-   $path = $_SERVER['DOCUMENT_ROOT'];
-   $path .= "/php_config.php";
-   include_once($path);
-?>
-
 <script src="<?php echo constant('ROOT_URL'); ?>luceole/script/toggleSeeMore.js">
 </script>
 

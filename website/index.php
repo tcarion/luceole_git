@@ -1,17 +1,32 @@
 <?php
 
 $page = $_GET['page'];
-//echo ${$page};
-$urls = new SplObjectStorage();
+$mode = $_GET['mode'];
 
-$root = "http://localhost:8888/luceole/";
+//$urls = new SplObjectStorage();
 
-$array = ["coop_carte_id" => $root."content/la_cooperative/carte_id.php",
-          "nav" => $root."content/nav.php",
-          "footer" => $root."content/footer.php",
-          "header" => $root."content/header.php",
-          "home" => $root."content/home_test.php"];
 
-header("Location: ".$array[$page]);
+
+$root_html = "http://localhost:8888/luceole/";
+$root_php = $_SERVER['DOCUMENT_ROOT']."/luceole/";
+
+$array = ["coop_carte_id" => "content/la_cooperative/carte_id.php",
+          "nav" => "content/nav.php",
+          "footer" => "content/footer.php",
+          "header" => "content/header.php",
+          "home" => "content/home.php",
+          "header_logo" => "files/luceole-header-logo.jpg",
+          "rescoop_logo" => "files/rescoop.png"];
+
+$file_location = "test";
+
+if ($mode == 'html') {
+  $file_location = $root_html.$array[$page];
+}
+elseif ($mode == 'php') {
+  $file_location = $root_php.$array[$page];
+}
+header("Location: ".$file_location);
+//header("Location: ".$array[$mode][$page]);
 
 ?>

@@ -1,5 +1,5 @@
 <div class="header_logo">
-  <img src="<?php echo constant('ROOT_URL'); ?>luceole/files/luceole-header-logo.jpg" style="border-radius: 5px;height: 75px;">
+  <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=header_logo&mode=html" style="border-radius: 5px;height: 75px;">
 </div>
 
 <nav class="navbar rounded navbar-expand-lg navbar-light bg-light">
@@ -17,7 +17,7 @@
           La Coopérative
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_carte_id" target="_top">Carte d'identité</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_carte_id&mode=html" target="_top">Carte d'identité</a>
           <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=vision_globale" target="_top">Vision Globale</a>
           <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=missions" target="_top">Missions</a>
           <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=valeurs" target="_top">Valeurs</a>

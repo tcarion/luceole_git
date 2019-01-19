@@ -2,7 +2,9 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-4">
-      <img src="http://localhost:8888/luceole/files/rescoop.png" style="height: 50px; padding-left: 0px; margin-left: 0px;">
+      <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=rescoop_logo&mode=html" style="height: 50px; padding-left: 0px; margin-left: 0px;">
+
+      <!--img src="http://localhost:8888/luceole/files/rescoop.png" style="height: 50px; padding-left: 0px; margin-left: 0px;"-->
     </div>
     <!--<div class="col-lg-4">
       <img src="http://localhost:8888/luceole/files/rescoop.png" class="partner-icons">
