@@ -5,6 +5,14 @@ body {
   background-size:cover;
   background-attachment: fixed;
 }
+/*
+img {
+  border: 2px solid black;
+} */
+
+hr {
+  margin: 5px 5px;
+}
 
 .header_logo {
   padding-left: 0px;
@@ -13,7 +21,9 @@ body {
   background-color: #FFFFFF;
   border-radius: 5px;
 }
-[class*="col-"] { margin-bottom: 20px; }
+[class*="col-"] {
+  padding: 0px 5px;
+ }
 
 .navbar-default {
   background-color: #FFFFFF;
@@ -47,8 +57,27 @@ body {
   font-size: 12px;
 }
 
+.card {
+  height: 300px;
+}
+
+.card-title {
+  margin: 0px 0px;
+  text-align: center;
+}
+
+.card-body {
+  padding: 5px 5px;
+}
+
 .card-img-top {
-  height: 70px;
+  height: 90px;
+}
+
+.card-body a {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
 }
 
 /* [class*="col-"], footer, .container {

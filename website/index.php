@@ -16,7 +16,8 @@ $array = ["coop_carte_id" => "content/la_cooperative/carte_id.php",
           "header" => "content/header.php",
           "home" => "content/home.php",
           "header_logo" => "files/luceole-header-logo.jpg",
-          "rescoop_logo" => "files/rescoop.png"];
+          "rescoop_logo" => "files/rescoop.png",
+          "cociter_logo" => "files/cociter.jpg"];
 
 $file_location = "test";
 
