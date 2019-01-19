@@ -92,7 +92,7 @@
               Suite de l'article 1
             </p>
             <p>
-              <a id="seeMore" onclick="toggleSeeMore('article1_suite')" href="javascript:void(0);">See More</a>
+              <a id="seeMore1" onclick="toggleSeeMore('article1_suite','1')" href="javascript:void(0);">See More</a>
             </p>
           </div >
         </div >
@@ -106,7 +106,7 @@
             <p id="article2_suite" style="display:None">
               Suite de l'article 2
             </p>
-            <a id="seeMore" onclick="toggleSeeMore('article2_suite')" href="javascript:void(0);">See More</a>
+            <a id="seeMore2" onclick="toggleSeeMore('article2_suite','2')" href="javascript:void(0);">See More</a>
           </div >
         </div >
 
