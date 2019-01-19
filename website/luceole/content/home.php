@@ -40,7 +40,7 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img  src="<?php echo constant('ROOT_URL'); ?>luceole/files/luceole-header-logo.jpg"  alt="First slide" style="border-radius: 5px;height: 400px;">
+                  <img  src="<?php echo constant('ROOT_URL'); ?>index.php?page=header_logo&mode=html"  alt="First slide" style="border-radius: 5px;height: 400px;">
                   <div class="carousel-caption">
                     <h5>Cap1</h5>
                     <p>Explications</p>
@@ -51,7 +51,7 @@
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="<?php echo constant('ROOT_URL'); ?>luceole/files/rescoop.png"  alt="Third slide" style="border-radius: 5px;height: 400px;">
+                  <img class="d-block w-100" src="<?php echo constant('ROOT_URL'); ?>index.php?page=rescoop_logo&mode=html"  alt="Third slide" style="border-radius: 5px;height: 400px;">
                   <div class="carousel-caption">
                     <h5>Cap3</h5>
                     <p>Explications</p>
@@ -74,13 +74,13 @@
               <div class="row">
                 <div class="col-lg-4">
                   <div class="card">
-                    <img class="card-img-top" src="<?php echo constant('ROOT_URL'); ?>luceole/files/luceole-header-logo.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="<?php echo constant('ROOT_URL'); ?>index.php?page=header_logo&mode=html" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Qui sommes-nous?</h5>
                       <p class="card-text">Une société coopérative est une entreprise dont la propriété est collective et où
                         le pouvoir est exercé démocratiquement par un groupe de personnes associées volontairement pour satisfaire
                         leurs aspirations et besoins économiques, sociaux et culturels communs.</p>
-                        <a class="btn btn-primary" href="<?php echo constant('ROOT_URL'); ?>index.php?page=vision_globale">En savoir plus</a>
+                        <a class="btn btn-primary" href="<?php echo constant('ROOT_URL'); ?>index.php?page=vision_globale&mode=html">En savoir plus</a>
                       </div>
                     </div>
                   </div> <!-- col-lg-4 for card 1 -->
