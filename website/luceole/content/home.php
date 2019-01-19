@@ -47,7 +47,9 @@
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="<?php echo constant('ROOT_URL'); ?>luceole/files/cociter.jpg"  alt="Second slide" style="border-radius: 5px;height: 400px;">
+                  <iframe class="video_mask" height="400px" width=100% style="border-radius: 5px; height: 400px"
+                  src="https://www.youtube.com/embed/PXuuN-zgEWA">
+                  </iframe>
                   <div class="carousel-caption">
                     <h5>Cap2</h5>
                     <p>Explication</p>
