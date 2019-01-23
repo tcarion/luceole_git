@@ -46,7 +46,7 @@
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <div class="" id="player">
+                  <div class="" id="player" style="border-radius: 5px;height: 400px;">
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -151,6 +151,27 @@
                   style="border-width:0; padding-top:0px;" width="100%" height="400" frameborder="0" scrolling="yes"></iframe>
                 </div>
               </div> -->
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="subscription-button">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <a href="http://www.coophub.eu/" target="_blank">
+                          <button type="button" class="btn btn-primary">Devenir Coopérateur</button>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <a href="https://www.cociter.be/devenir-client-de-cociter/" target="_blank">
+                          <button type="button" class="btn btn-primary">Devenir Client Cociter</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <!-- Actualité en rapport avec Lucéole, développement durable, etc -->
               <div class="row">
                 <div class="col-lg-12">
@@ -159,7 +180,7 @@
                       <h5 class="card-title">Article 1</h5>
                       <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                       <p class="card-text">Debut article 1</p>
-                      <p id="article1_suite" class="card-text" style="display:None">Suite de l'article 1</p>
+                      <p id="article1_suite" class="card-text" style="display:None">Pour ce qui est de notre coopérative, à coté de la production d’énergie verte, Lucéole scrl veut promouvoir une utilisation rationnelle et responsable de l’énergie. Pour ce faire elle développera les services qui permettront à ses coopérateurs de réduire leur empreinte énergétique. La coopérative veut donc être active dans la production et la consommation durable. Elle cherchera aussi à ce que les coopérateurs puissent consommer l’énergie produite à des prix stables et avantageux. </p>
                       <p class="card-text">
                         <a id="seeMore1" onclick="toggleSeeMore('article1_suite','1')" href="javascript:void(0);" class="card-link">See more</a>
                       </p>
@@ -189,7 +210,7 @@
                       <h5 class="card-title">Article 2</h5>
                       <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                       <p class="card-text">Debut article 2</p>
-                      <p id="article2_suite" class="card-text" style="display:None">Suite de l'article 2</p>
+                      <p id="article2_suite" class="card-text" style="display:None">Le développement durable ou plus justement sous sa dénomination anglaise « sustainable development » est le principe selon lequel l’humanité doit répondre aux besoins du présent sans compromettre la capacité des générations futures à répondre aux leurs. La cohérence transversale entre nos décisions doit permettre de réconcilier économie, environnement et société et assurer une meilleure qualité de vie pour tous aujourd’hui et demain. Le développement durable est une vision du progrès qui intègre des objectifs à court et long terme, l’action locale et globale et considère les thèmes sociaux, économiques et environnementaux comme des composants indissociables et interdépendants du développement humain. (définition de base U.E.).</p>
                       <p class="card-text">
                         <a id="seeMore2" onclick="toggleSeeMore('article2_suite','2')" href="javascript:void(0);" class="card-link">See more</a>
                       </p>
@@ -201,7 +222,7 @@
               <!-- Liens utiles en rapport avec Lucéole, développement durable, énergies, etc -->
               <div class="row">
                 <div class="col-lg-12">
-                  fdjslfqm
+
                 </div >
               </div>
             </div> <!-- col-lg-3 -->

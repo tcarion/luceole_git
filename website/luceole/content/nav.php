@@ -18,10 +18,10 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_carte_id&mode=html" target="_top">Qui sommes-nous ?</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_vis_val" target="_top">Visions & Valeurs</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_ca" target="_top">Le Conseil d'administration</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_statuts" target="_top">Statuts</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_roi" target="_top">ROI</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_vis_val&mode=html" target="_top">Visions & Valeurs</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_ca&mode=html" target="_top">Le Conseil d'administration</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_statuts&mode=html" target="_top">Statuts</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_roi&mode=html" target="_top">ROI</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -29,15 +29,19 @@
           Projets
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_habay" target="_top">Eolien - Habay</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_fauvillers" target="_top">Eolien - Fauvillers</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_arlon_vds" target="_top">Eolien - Arlon - VDS</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_nantimont" target="_top">Eolien - Nantimont</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_hydro_sambre" target="_top">Hydraulique - Sambre & Ourthe</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_habay&mode=html" target="_top">Eolien - Habay</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_fauvillers&mode=html" target="_top">Eolien - Fauvillers</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_arlon_vds&mode=html" target="_top">Eolien - Arlon - VDS</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_nantimont&mode=html" target="_top">Eolien - Nantimont</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=pr_hydro_sambre&mode=html" target="_top">Hydraulique - Sambre & Ourthe</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Fourniture d'électricité</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fourniture d'électricité</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=elec_circuit_court&mode=html" target="_top">Le circuit court</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=elec_cociter&mode=html" target="_top">COCITER</a>
+        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Lettres d'information</a>

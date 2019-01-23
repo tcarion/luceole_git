@@ -5,8 +5,6 @@ $mode = $_GET['mode'];
 
 //$urls = new SplObjectStorage();
 
-
-
 $root_html = "http://localhost:8888/luceole/";
 $root_php = $_SERVER['DOCUMENT_ROOT']."/luceole/";
 
@@ -16,7 +14,6 @@ $array = ["nav" => "content/nav.php",
           "home" => "content/home.php",
           "header_logo" => "files/luceole-header-logo.jpg",
           "rescoop_logo" => "files/rescoop.png",
-<<<<<<< HEAD
           "cociter_logo" => "files/cociter.jpg",
           "vds_logo" => "files/vds.png",
           "apere_logo" => "files/apere-logo.png",
@@ -26,10 +23,14 @@ $array = ["nav" => "content/nav.php",
           "coop_vis_val" => "content/la_cooperative/visions_valeurs.php",
           "coop_statuts" => "content/la_cooperative/statuts.php",
           "coop_roi" => "content/la_cooperative/roi.php",
-          "coop_ca" => "content/la_cooperative/conseil_administration.php"];
-=======
-          "cociter_logo" => "files/cociter.jpg"];
->>>>>>> 531a390d7fc957c42bbee2af30f1d52bca33e6e0
+          "coop_ca" => "content/la_cooperative/conseil_administration.php",
+          "pr_habay" => "content/projets/eolien_habay.php",
+          "pr_fauvillers" => "content/projets/eolien_fauvillers.php",
+          "pr_arlon_vds" => "content/projets/eolien_arlon_vds.php",
+          "pr_nantimont" => "content/projets/eolien_nantimont.php",
+          "pr_hydro_sambre" => "content/projets/hydro_sambre_ourthe.php",
+          "elec_cociter" => "content/fourniture_electricite/cociter.php",
+          "elec_circuit_court" =>"content/fourniture_electricite/circuit_court.php"];
 
 $file_location = "test";
 

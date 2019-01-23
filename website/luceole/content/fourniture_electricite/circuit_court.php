@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Visions & Valeurs</title>
+    <title>Le Circuit Court</title>
     <?php
     $path = $_SERVER['DOCUMENT_ROOT'];
     $path .= "/php_config.php";
@@ -16,7 +16,6 @@
       $path = get_headers(constant('ROOT_URL')."index.php?page=nav&mode=php",1);
       include_once($path['Location']);
       ?>
-
       <?php
       $path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
       include_once($path['Location']);

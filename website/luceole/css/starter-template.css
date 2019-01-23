@@ -21,14 +21,9 @@ hr {
   background-color: #FFFFFF;
   border-radius: 5px;
 }
-<<<<<<< HEAD
-[class*="col-"] { margin-bottom: 20px;
-/*border: 2px solid black;*/}
-=======
 /* [class*="col-"] {
   padding: 0px 5px;
  } */
->>>>>>> 531a390d7fc957c42bbee2af30f1d52bca33e6e0
 
 .navbar-default {
   background-color: #FFFFFF;
@@ -48,7 +43,7 @@ hr {
 
 .foot-img {
   /*border: 2px solid black;*/
-  height: 75px;
+  height: 50px;
   text-align: center;
   display: grid;
   justify-content: center;
@@ -56,6 +51,12 @@ hr {
   border-radius: 5px;
 }
 
+.subscription-button {
+  text-align: center;
+  border-radius: 5px;
+  padding-bottom: 10px;
+
+}
 .foot-img-cells {
 
   text-align: center;
@@ -106,6 +107,27 @@ hr {
   right: 5px;
 }
 
+.btn-primary {
+  width:200px;
+  background-color: #1175A4;
+  border-color: #1175A4;
+}
+
+.social-network-btn {
+  text-align: center;
+
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #1175A4;
+  text-color: white;
+}
 /* [class*="col-"], footer, .container {
   background-color: lightgreen;
   border: 2px solid black;

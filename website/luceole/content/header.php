@@ -5,6 +5,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="../../favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 <script src="<?php echo constant('ROOT_URL'); ?>luceole/script/jquery.js">

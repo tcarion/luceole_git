@@ -12,12 +12,12 @@
   </head>
   <body>
     <div class="container">
-      <<?php
+      <?php
       $path = get_headers(constant('ROOT_URL')."index.php?page=nav&mode=php",1);
       include_once($path['Location']);
       ?>
 
-      <<?php
+      <?php
       $path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
       include_once($path['Location']);
       ?>
