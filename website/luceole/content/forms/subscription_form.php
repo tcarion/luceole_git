@@ -2,19 +2,22 @@
 
 function legal_form_result() {
 		 if (document.getElementById("legal_form").checked){
-			 	document.getElementById("physical_person_form").style.display="initial";
+			 	$('#physical_person_form').html("");
+				$('#moral_person_form').html("");
+				document.getElementById("physical_person_form").style.display="initial";
 			 	document.getElementById("moral_person_form").style.display="none";
 		 }
 		 else {
+			 	$('#physical_person_form').html("");
+			 	$('#moral_person_form').html("");
 			 	document.getElementById("physical_person_form").style.display="none";
  				document.getElementById("moral_person_form").style.display="initial";
 		 }
 
 }
-
 </script>
 
-<form class="form-horizontal" role="form" method="POST">
+<form class="form-horizontal" role="form" method="POST" action="<?php echo constant('ROOT_URL'); ?>index.php?page=send_subs_form&mode=html">
 	<div class="row" style="padding-bottom: 5px;margin-bottom:0px;">
 		<div class="col-lg-12 form-group" style="padding-bottom: 0px;margin-bottom:0px;">
 				<label for="legal_form">Je suis :</label>
@@ -32,10 +35,7 @@ function legal_form_result() {
 		?>
 	</div>
 	<div class="col-lg-12 form-group" id="moral_person_form" style="display:none;">
-		<?php
-		$path = get_headers(constant('ROOT_URL')."index.php?page=moral_person&mode=php",1);
-		include_once($path['Location']);
-		?>
+
 	</div>
 
 </div>
