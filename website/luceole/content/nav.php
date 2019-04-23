@@ -19,7 +19,8 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_carte_id&mode=html" target="_top">Qui sommes-nous ?</a>
           <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_vis_val&mode=html" target="_top">Visions & Valeurs</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_ca&mode=html" target="_top">Le Conseil d'administration</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_gouvernance&mode=html" target="_top">Gouvernance</a>
+          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_ca&mode=html" target="_top">Le Conseil d'Administration</a>
           <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_statuts&mode=html" target="_top">Statuts</a>
           <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_roi&mode=html" target="_top">ROI</a>
         </div>
@@ -40,20 +41,20 @@
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fourniture d'électricité</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=elec_circuit_court&mode=html" target="_top">Le circuit court</a>
-          <a class="dropdown-item" href="<?php echo constant('ROOT_URL'); ?>index.php?page=elec_cociter&mode=html" target="_top">COCITER</a>
+          <a class="dropdown-item" href="https://www.cociter.be/" target="_blank">COCITER</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Lettres d'information</a>
+        <a class="nav-link" href="<?php echo constant('ROOT_URL'); ?>index.php?page=lettres_information&mode=html" target="_top">Lettres d'information</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Devenir Coopérateur</a>
+        <a class="nav-link" href="<?php echo constant('ROOT_URL'); ?>index.php?page=devenir_cooperateur&mode=html">Devenir Coopérateur</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">FAQ</a>
+        <a class="nav-link" href="<?php echo constant('ROOT_URL'); ?>index.php?page=faq&mode=html">FAQ</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="<?php echo constant('ROOT_URL'); ?>index.php?page=contact&mode=html">Contact</a>
       </li>
     </ul>
   </div>

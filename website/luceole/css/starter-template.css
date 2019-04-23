@@ -4,6 +4,7 @@ body {
   background-repeat:no-repeat;
   background-size:cover;
   background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
 }
 /*
 img {
@@ -27,6 +28,7 @@ hr {
 
 .navbar-default {
   background-color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
 }
 .starter-template {
   text-align: center;
@@ -34,7 +36,7 @@ hr {
 
 .carousel-caption {
     background: rgba(0, 0, 0, 0.35);
-    height: 100px;
+    height: 60px;
     padding-top: 0px;
     right: 0%;
     left: 0%;
@@ -55,6 +57,7 @@ hr {
   text-align: center;
   border-radius: 5px;
   padding-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
 
 }
 .foot-img-cells {
@@ -66,6 +69,16 @@ hr {
 
 .row {
     padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    background-color: #bccad6;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
 }
 
 .carousel-control-prev-icon {
@@ -82,6 +95,7 @@ hr {
 
 .card-text {
   font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .card-row .card {
@@ -91,20 +105,27 @@ hr {
 .card-title {
   margin: 0px 0px;
   text-align: center;
+  padding: 5px 5px 10px 10px;
 }
 
 .card-body {
-  padding: 5px 5px;
+  padding: 5px 5px 10px 10px;
 }
 
 .card-img-top {
   height: 90px;
+  padding: 5px 5px 10px 10px;
 }
 
 .card-body a {
   position: absolute;
   bottom: 0;
   right: 5px;
+}
+
+.card-body-faq {
+  padding: 20px 20px 20px 20px;
+  text-align: justify
 }
 
 .btn-primary {
@@ -124,13 +145,69 @@ hr {
   width: 30px;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
-  background-color: #1175A4;
-  text-color: white;
+  background-color: transparent;
+  color: white;
 }
-/* [class*="col-"], footer, .container {
+
+/*[class*="col-"], footer, .container {
   background-color: lightgreen;
   border: 2px solid black;
   border-radius: 6px;
   line-height: 40px;
-} */
+}*/
+
+/*[class*="row"] {
+  background-color: grey;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}*/
+
+.usefull_links{
+  margin: inherit;
+  border-radius: 5px;
+  background-color: #bccad6;
+}
+
+.usefull_links_title{
+  padding-left: 10px;
+  font-size: 35px;
+}
+
+.socials{
+  text-align: center;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 35px;
+  padding-inline-start: 0px;
+
+}
+
+.socials_2{
+  display: inline-block;
+}
+
+.lettre-info-title{
+  padding-left: 10px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.pages-title{
+  font-size: 35px;
+  padding-left: 10px;
+}
+
+.pages-body{
+  padding-top: 10px;
+  text-align: justify;
+  font-size: 12px;
+  padding-left: 10px;
+  width:100%;
+}
+
+.form-group{
+  width:100%;
+  font-size: 15px;
+}

@@ -1,6 +1,15 @@
 <link href="http://localhost:8888/luceole/css/starter-template.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="container">
+<div class="usefull_links">
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="usefull_links_title">
+        Liens utiles
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-lg-2">
       <div class="foot-img-cells">
@@ -52,15 +61,25 @@
   </div>
   <div class="row">
     <div class="col-lg-12">
-      <div class="social-network-btn">
-        
-      </div>
+                <ul class="socials">
+                    <li class="socials_2">
+                      <a href="https://www.facebook.com/luceole/" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li class="socials_2">
+                      <a href="https://twitter.com" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                </ul>
     </div>
   </div>
-</div>
-
-<div class="container" style="padding-left: 15px">
-  <font color="white">© Lucéole scrl - All rights reserved</font>
+  <div class="row" style="padding-left: 15px">
+    <div class="col-lg-12">
+      <font color="black">© Lucéole scrl - All rights reserved</font>
+    </div>
+  </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>

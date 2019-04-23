@@ -22,6 +22,8 @@
 
 <!-- Custom styles for this template -->
 <link href="<?php echo constant('ROOT_URL'); ?>luceole/css/starter-template.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Germania+One|Open+Sans:300,700" rel="stylesheet">
+
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
