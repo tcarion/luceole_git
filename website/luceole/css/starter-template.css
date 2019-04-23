@@ -61,7 +61,7 @@ hr {
 
 }
 .foot-img-cells {
-
+  padding: 0px;
   text-align: center;
   display: grid;
   justify-content: center;
@@ -139,7 +139,7 @@ hr {
 
 }
 
-.fa {
+/* .fa {
   padding: 20px;
   font-size: 30px;
   width: 30px;
@@ -147,7 +147,7 @@ hr {
   text-decoration: none;
   background-color: transparent;
   color: white;
-}
+} */
 
 /*[class*="col-"], footer, .container {
   background-color: lightgreen;
@@ -179,13 +179,17 @@ hr {
   list-style-type: none;
   box-sizing: border-box;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 10px;
   padding-inline-start: 0px;
 
 }
 
 .socials_2{
   display: inline-block;
+}
+
+.social{
+  color: #fff;
 }
 
 .lettre-info-title{
@@ -210,4 +214,19 @@ hr {
 .form-group{
   width:100%;
   font-size: 15px;
+}
+
+.footer-body {
+  padding-top: 5px;
+  text-align: left;
+  font-size: 10px;
+  width:100%;
+}
+
+.footer-body ul {
+  padding-inline-start: 15px;
+}
+
+.mentions-legales {
+  font-size: 10px;
 }
