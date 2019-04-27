@@ -26,6 +26,11 @@ hr {
   padding: 0px 5px;
  } */
 
+.error {
+  color:red;
+  font-size:auto;
+}
+
 .navbar-default {
   background-color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;

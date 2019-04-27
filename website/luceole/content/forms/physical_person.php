@@ -22,7 +22,7 @@ humain auquel la loi attache des droits et des obligations.</i>
 </p>
 
 <p>
-<b>Les champs marqués d'une astérixe (*) sont obligatoires.</b>
+<b>Les champs marqués d'une astérisque (*) sont obligatoires.</b>
 </p>
 
 <fieldset style="padding-bottom: 10px;margin-bottom:0px;">
@@ -35,101 +35,104 @@ humain auquel la loi attache des droits et des obligations.</i>
   </div>
   <div class="col-auto"  style="float:left;">
     <label for="lastname">Nom*</label>
-    <!--div class="col-sm-10"-->
-    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Nom de famille" value="" required>
+    <span class="error"> <?php echo $errLastName ?></span>
+    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Nom de famille" value="<?php echo $lastname?>" required>
+
   </div>
   <div class="col-auto"  style="float:left;">
     <label for="firstname">Prénom*</label>
-    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Prénom" value="" required>
+    <span class="error"> <?php echo $errFirstName ?></span>
+    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Prénom" value="<?php echo $firstname?>" required>
   </div>
   <div class="col-auto"  style="float:left;">
     <label for="birth_date">Date de Naissance*</label>
-    <input type="text" class="form-control" id="birth_date" name="birth_date" placeholder="01/01/2000" value="" required>
+    <input type="date" class="form-control" id="birth_date" name="birth_date" placeholder="01/01/2000" value="<?php echo $birth_date?>" required>
   </div>
   <div class="col-auto"  style="float:left;">
     <label for="birth_place">Lieu de Naissance*</label>
-    <input type="text" class="form-control" id="birth_place" name="birth_place" placeholder="Belgique" value="" required>
+    <input type="text" class="form-control" id="birth_place" name="birth_place" placeholder="Belgique" value="<?php echo $birth_place?>" required>
   </div>
   <div class="col-auto"  style="float:left;">
     <label for="national_id">Numéro de Registre National*</label>
-    <input type="text" class="form-control" id="national_id" name="national_id" placeholder="75.03.27-252.13" value="" required>
+    <input type="text" class="form-control" id="national_id" name="national_id" placeholder="75.03.27-252.13" value="<?php echo $national_id?>" required>
   </div>
   <div class="col-auto" id="lastname_tut" style="display:none; float:left;">
     <label for="lastname_tut">Nom du Parent/Tuteur*</label>
-    <input type="text" class="form-control" id="lastname_tut" name="lastname_tut" placeholder="Nom de famille" value="">
+    <input type="text" class="form-control" id="lastname_tut" name="lastname_tut" placeholder="Nom de famille" value="<?php echo $lastname_tut?>">
   </div>
   <div class="col-auto" id="firstname_tut" style="display:none; float:left;">
     <label for="firstname_tut">Prénom du Parent/Tuteur*</label>
-    <input type="text" class="form-control" name="firstname_tut" placeholder="Prénom" value="">
+    <input type="text" class="form-control" name="firstname_tut" placeholder="Prénom" value="<?php echo $firstname_tut?>">
   </div>
 </fieldset>
 <fieldset style="padding-bottom: 10px;margin-bottom:0px;">
   <legend>Coordonnées</legend>
   <div class="col-auto" style="float:left;">
     <label for="phone">Téléphone*</label>
-    <input type="text" class="form-control" id="phone" name="phone" placeholder="063/12.34.56" value="" required>
+    <input type="text" class="form-control" id="phone" name="phone" placeholder="063/12.34.56" value="<?php echo $phone?>" required>
   </div>
   <div class="col-auto" style="float:left;">
     <label for="mobile_phone">GSM</label>
-    <input type="text" class="form-control" id="mobile_phone" name="mobile_phone" placeholder="0475/12.34.56" value="">
+    <input type="text" class="form-control" id="mobile_phone" name="mobile_phone" placeholder="0475/12.34.56" value="<?php echo $mobile_phone?>">
   </div>
   <div class="col-auto" style="float:left;">
     <label for="email">Adresse Email*</label>
-    <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="" required>
+    <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo $email?>" required>
   </div>
   <div class="col-auto" style="float:left;">
     <label for="email_conf">Confirmer l'adresse email*</label>
-    <input type="email" class="form-control" id="email_conf" name="email_conf" placeholder="example@domain.com" value="" required>
+    <input type="email" class="form-control" id="email_conf" name="email_conf" placeholder="example@domain.com" value="<?php echo $email_conf?>" required>
+    <span class="error"> <?php echo $errEmailConf ?></span>
   </div>
 </fieldset>
 <fieldset style="padding-bottom: 10px;margin-bottom:0px;">
   <legend>Adresse</legend>
     <div class="col-auto" style="float:left;">
       <label for="street">Rue*</label>
-      <input type="text" class="form-control" id="street" name="street" placeholder="Rue du Centre" value="" required>
+      <input type="text" class="form-control" id="street" name="street" placeholder="Rue du Centre" value="<?php echo $street?>" required>
     </div>
     <div class="col-auto" style="float:left;">
       <label for="house_number">Numéro*</label>
-      <input type="text" class="form-control" id="house_number" name="house_number" placeholder="34" value="" required>
+      <input type="text" class="form-control" id="house_number" name="house_number" placeholder="34" value="<?php echo $house_number?>" required>
     </div>
     <div class="col-auto" style="float:left;">
       <label for="zip_code">Code Postal*</label>
-      <input type="text" class="form-control" id="zip_code" name="zip_code" placeholder="1000" value="" required>
+      <input type="text" class="form-control" id="zip_code" name="zip_code" placeholder="1000" value="<?php echo $zip_code?>" required>
     </div>
     <div class="col-auto" style="float:left;">
       <label for="city">Ville*</label>
-      <input type="text" class="form-control" id="city" name="city" placeholder="Habay-la-Neuve" value="" required>
+      <input type="text" class="form-control" id="city" name="city" placeholder="Habay-la-Neuve" value="<?php echo $city?>" required>
     </div>
     <div class="col-auto" style="float:left;">
       <label for="country">Pays*</label>
-      <input type="text" class="form-control" id="country" name="country" placeholder="Belgique" value="" required>
+      <input type="text" class="form-control" id="country" name="country" placeholder="Bruxelles" value="<?php echo $country?>" required>
     </div>
 </fieldset>
 <fieldset style="padding-bottom: 10px;margin-bottom:0px;">
   <legend>Autres détails</legend>
   <div class="col-auto" style="float:left;">
     <label for="iban">Numéro de Compte (IBAN)*</label>
-    <input type="text" class="form-control" id="iban" name="iban" placeholder="BE10 1234 4567 7898" value="" required>
+    <input type="text" class="form-control" id="iban" name="iban" placeholder="BE10 1234 4567 7898" value="<?php echo $iban?>" required>
   </div>
   <div class="col-auto" style="float:left;">
     <label for="shares">Nombre de parts*</label>
-    <input type="text" class="form-control" id="shares" name="shares" placeholder="1" value="" required>
+    <input type="text" class="form-control" id="shares" name="shares" placeholder="1" value="<?php echo $shares?>" required>
   </div>
   <div class="col-auto" style="float:left;">
     <label for="reason">Comment avez-vous entendu parler de Lucéole ?</label>
-    <input type="text" class="form-control" id="reason" name="reason" placeholder="" value="">
+    <input type="text" class="form-control" id="reason" name="reason" placeholder="" value="<?php echo $reason?>">
   </div>
 </br>
   <div class="col-auto" style="clear:left;">
     <label for="notes">Remarques</label>
     <div class="col-lg-12">
-      <textarea class="form-control" rows="4" name="notes"></textarea>
+      <textarea class="form-control" rows="4" name="notes" value="<?php echo $notes?>"></textarea>
     </div>
   </div>
   <div class="col-auto">
     <label for="skills">Compétences particulières</label>
     <div class="col-lg-12">
-      <textarea class="form-control" rows="4" name="skills"></textarea>
+      <textarea class="form-control" rows="4" name="skills" value:"<?php echo $skills?>"></textarea>
     </div>
   </div>
   <div class="col-auto" style="width:auto;">
@@ -144,4 +147,3 @@ humain auquel la loi attache des droits et des obligations.</i>
   </div>
 
 </fieldset>
-  <input style="margin-top:10px;" id="submit" name="submit" type="submit" value="Envoyer" class="btn btn-primary">

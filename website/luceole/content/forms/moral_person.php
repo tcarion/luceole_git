@@ -9,7 +9,7 @@ les Communes, les établissements publics, les associations sans but lucratif
 </p>
 
 <p>
-<b>Les champs marqués d'une astérixe (*) sont obligatoires.</b>
+<b>Les champs marqués d'une astérisque (*) sont obligatoires.</b>
 </p>
 
 <fieldset style="padding-bottom: 10px;margin-bottom:0px;">
@@ -109,5 +109,3 @@ les Communes, les établissements publics, les associations sans but lucratif
     <label for="agree" style="width:auto;"> Je soussigné déclare adhérer aux <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_statuts&mode=html" target="_blank">statuts</a> de Lucéole scrl et avoir pris connaissance de son <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_roi&mode=html" target="_blank">règlement d’ordre intérieur</a>*. </label>
   </div>
 </fieldset>
-
-  <input style="margin-top:10px;" id="submit" name="submit" type="submit" value="Envoyer" class="btn btn-primary">

@@ -6,7 +6,7 @@
   $path = $_SERVER['DOCUMENT_ROOT'];
   $path .= "/php_config.php";
   include_once($path);
-  $path1 = get_headers(constant('ROOT_URL')."index.php?page=header&mode=php",1);
+  $path1 = constant('ROOT_URL')."index.php?page=header&mode=php";
   include_once($path1['Location']);
   ?>
 </head>
@@ -39,21 +39,35 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img  src="<?php echo constant('ROOT_URL'); ?>index.php?page=header_logo&mode=html"  alt="First slide" style="border-radius: 5px;height: 400px;">
-                  <div class="carousel-caption">
-                    <h5>Cap1</h5>
-                    <p>Explications</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
                   <div class="" id="player" style="border-radius: 5px;height: 400px;">
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="<?php echo constant('ROOT_URL'); ?>index.php?page=rescoop_logo&mode=html"  alt="Third slide" style="border-radius: 5px;height: 400px;">
+                  <img  src="<?php echo constant('ROOT_URL'); ?>index.php?page=car_fauvillers&mode=html"  alt="First slide" style="border-radius: 5px;height: 400px; width:100%;">
                   <div class="carousel-caption">
-                    <h5>Cap3</h5>
-                    <p>Explications</p>
+                    <h5>Projet Eolien - Fauvillers</h5>
+                    <p>Les travaux de chemins ont débuté !</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img  src="<?php echo constant('ROOT_URL'); ?>index.php?page=car_hose&mode=html"  alt="Second slide" style="border-radius: 5px;height: 400px;width:100%;">
+                  <div class="carousel-caption">
+                    <h5>Projet Hydraulique - Hose</h5>
+                    <p>Le site de Marcinelle II</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img  src="<?php echo constant('ROOT_URL'); ?>index.php?page=car_vda&mode=html"  alt="Third slide" style="border-radius: 5px;height: 400px;width:100%;">
+                  <div class="carousel-caption">
+                    <h5>Site Eolien - Vents d'Autelbas</h5>
+                    <p>Les éoliennes de Vents d'Autelbas tournent à plein fouets</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="<?php echo constant('ROOT_URL'); ?>index.php?page=car_habay&mode=html"  alt="Fourth slide" style="border-radius: 5px;height: 400px;width:100%;">
+                  <div class="carousel-caption">
+                    <h5>Projet Eolien - Habay</h5>
+                    <p>Un schéma du site d'implantation du projet éolien de Habay</p>
                   </div>
                 </div>
               </div> <!-- <div class="carousel-inner"> -->

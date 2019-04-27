@@ -1,5 +1,31 @@
 <?php
 
+	$errLastName = "";
+	$errFirstName = "";
+	$errEmailConf = "";
+
+	$lastname = "";
+	$firstname = "";
+	$street = "";
+	$house_number = "";
+	$zip_code = "";
+	$city = "";
+	$country = "";
+	$phone = "";
+	$mobile_phone = "";
+	$birth_date = "";
+	$birth_place = "";
+	$lastname_tut = "";
+	$firstname_tut = "";
+	$national_id = "";
+	$email = "";
+	$email_conf = "";
+	$iban = "";
+	$shares = "";
+	$reason = "";
+	$notes = "";
+	$skills = "";
+
 	if (isset($_POST['submit'])) {
 		$lastname = $_POST['lastname'];
 		$firstname = $_POST['firstname'];
@@ -26,6 +52,7 @@
 		$notes = $_POST['notes'];
 		$skills = $_POST['notes'];
 
+
 		$from = 'Demo Contact Form';
 		$to = 'samuel.courtois93@gmail.com';
 		$subject = 'Message from Contact Demo ';
@@ -33,115 +60,65 @@
 		$body = "From: $lastname $firstname\n E-Mail: $email\n Message:\n";
 
 		// Check if name has been entered
-		if (!$_POST['lastname']) {
-			$errName = 'Please enter your lastname';
+		if (preg_match("/[^a-zA-Z\-\s]/",$lastname)){
+			$errLastName = 'Veuillez utiliser que des lettres et des espaces';
 		}
     else{
-        $errName = false;
+        $errLastName = false;
     }
 
 		// Check if firstname has been entered
-		if (!$_POST['firstname']) {
-			$errName = 'Please enter your firstname';
+		if (preg_match("/[^a-zA-Z\-\s]/",$firstname)) {
+			$errFirstName = 'Veuillez utiliser que des lettres et des espaces';
 		}
     else{
-        $errName = false;
-    }
-
-		// Check if street has been entered
-		if (!$_POST['street']) {
-			$errName = 'Please enter your street';
-		}
-    else{
-        $errName = false;
-    }
-
-		// Check if house number has been entered
-		if (!$_POST['house_number']) {
-			$errName = 'Please enter your house number';
-		}
-    else{
-        $errName = false;
-    }
-
-		// Check if zip code  has been entered
-		if (!$_POST['zip_code']) {
-			$errName = 'Please enter your zip code';
-		}
-    else{
-        $errName = false;
-    }
-
-		// Check if city has been entered
-		if (!$_POST['city']) {
-			$errName = 'Please enter your city';
-		}
-    else{
-        $errName = false;
-    }
-
-		// Check if country  has been entered
-		if (!$_POST['country']) {
-			$errName = 'Please enter your country';
-		}
-    else{
-        $errName = false;
-    }
-
-		// Check if phone has been entered
-		if (!$_POST['phone']) {
-			$errName = 'Please enter your phone number';
-		}
-    else{
-        $errName = false;
-    }
-
-		// Check if birth date has been entered
-		if (!$_POST['birth_date']) {
-			$errName = 'Please enter your birth date';
-		}
-    else{
-        $errName = false;
-    }
-
-		// Check if birth place has been entered
-		if (!$_POST['birth_place']) {
-			$errName = 'Please enter your birth place';
-		}
-    else{
-        $errName = false;
+        $errFistName = false;
     }
 
 		// Check if lastname_tut has been entered
-		if (!$_POST['lastname_tut']) {
-			$errName = 'Please enter the lastname of the tutor';
+		if (preg_match("/[^a-zA-Z\-\s]/",$lastname_tut)) {
+			$errLastNameTut = 'Veuillez utiliser que des lettres et des espaces';
 		}
     else{
-        $errName = false;
+        $errLastNameTut = false;
     }
 
 		// Check if firstname_tut has been entered
-		if (!$_POST['firstname_tut']) {
-			$errName = 'Please enter the firstname of the tutor';
+		if (preg_match("/[^a-zA-Z\-\s]/",$firstname_tut)) {
+			$errFirstNameTut = 'Veuillez utiliser que des lettres et des espaces';
 		}
     else{
-        $errName = false;
+        $errFirstNameTut = false;
     }
 
 		// Check if firstname_tut has been entered
+		function test_iban($iban) {
+			$temp_iban = str_replace(" ","", $iban);
+			$temp_iban = str_replace("-","", $iban);
+			$temp_iban = substr($temp_iban, 4, strlen($temp_iban)-4).substr($temp_iban, 0, 4);
+			$array_iban = str_split($temp_iban);
+
+			foreach ($array_iban as $key => $value) {
+				// code...
+			}
+			return $temp_iban;
+		}
+
+		$iban = test_iban($iban);
+
 		if (!$_POST['iban']) {
-			$errName = 'Please enter your IBAN';
+			$errIBAN = 'Please enter your IBAN';
 		}
     else{
-        $errName = false;
+        $errIBAN = false;
     }
 
 		// Check if firstname_tut has been entered
 		if (!$_POST['shares']) {
-			$errName = 'Please enter the number of shares';
+			$errShares = 'Please enter the number of shares';
 		}
     else{
-        $errName = false;
+        $errShares = false;
     }
 
 		// Check if email has been entered and is valid
@@ -154,19 +131,24 @@
 
 		// Check if email has been entered and is valid
 		if ($_POST['email'] !== $_POST['email_conf']) {
-				$errEmail = 'L addresse email doit être identique à la première';
+				$errEmailConf = 'L addresse email doit être identique à la première';
 		}
     else{
-        $errEmail = false;
+        $errEmailConf = false;
     }
 
-// If there are no errors, send the email
-if (!$errName && !$errEmail) {
-	if (mail ($to, $subject, $body, $from)) {
-		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
-	} else {
-		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
-	}
-}
+		// If there are no errors, send the email
+		if (!$errLastName && !$errEmail && !$errEmailConf) {
+			if (mail ($to, $subject, $body, $from)) {
+				$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+				echo $result;
+			} else {
+				$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
+				echo $result;
+			}
+		}
+		else {
+
+		}
 	}
 ?>

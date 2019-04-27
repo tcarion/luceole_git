@@ -69,17 +69,25 @@ $array = ["nav" => "content/nav.php",
           "faq15" => "content/faq/faq15.php",
           "contact" => "content/contact/contact.php",
           "physical_person" => "content/forms/physical_person.php",
-          "moral_person" => "content/forms/moral_person.php"];
+          "moral_person" => "content/forms/moral_person.php",
+          "coexistence_milan" => "files/coexistancemilan.pdf",
+          "car_fauvillers" => "files/carroussel/fauvillers.png",
+          "car_hose" => "files/carroussel/hose.png",
+          "car_vda" => "files/carroussel/vda.png",
+          "car_habay" => "files/carroussel/habay.jpg"];
 
 $file_location = "test";
 
 if ($mode == 'html') {
   $file_location = $root_html.$array[$page];
 }
+
 elseif ($mode == 'php') {
   $file_location = $root_php.$array[$page];
 }
+
 header("Location: ".$file_location);
+
 //header("Location: ".$array[$mode][$page]);
 
 ?>
