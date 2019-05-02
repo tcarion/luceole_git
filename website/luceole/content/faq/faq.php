@@ -3,18 +3,19 @@
   <head>
     <title>Questions fréquentes</title>
     <?php
-    $path = $_SERVER['DOCUMENT_ROOT'];
-    $path .= "/php_config.php";
-    include_once($path);
-    $path1 = get_headers(constant('ROOT_URL')."index.php?page=header&mode=php",1);
-    include_once($path1['Location']);
+      $path = $_SERVER['DOCUMENT_ROOT'];
+      $path .= "/php_config.php";
+      include_once($path);
+      $path = $_SERVER['DOCUMENT_ROOT'];
+      $path .= "/index_url.php";
+      include_once($path);
+      include_once(build_url('php', 'header'));
     ?>
   </head>
   <body>
     <div class="container">
       <?php
-      $path = get_headers(constant('ROOT_URL')."index.php?page=nav&mode=php",1);
-      include_once($path['Location']);
+        include_once(build_url('php', 'nav'));
       ?>
       <div class="row pages">
         <div class="col-lg-9 border-primary">
@@ -25,64 +26,21 @@
             <div class="pages-body">
               <div class="accordion" id="accordion">
                 <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq1&mode=php",1);
-                include_once($path['Location']);
-                ?>
-                <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq2&mode=php",1);
-                include_once($path['Location']);
-                ?>
-                <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq3&mode=php",1);
-                include_once($path['Location']);
-                ?>
-                <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq4&mode=php",1);
-                include_once($path['Location']);
-                ?>
-                <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq5&mode=php",1);
-                include_once($path['Location']);
-                ?>
-                <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq6&mode=php",1);
-                include_once($path['Location']);
-                ?>
-                <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq7&mode=php",1);
-                include_once($path['Location']);
-                ?>
-                <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq8&mode=php",1);
-                include_once($path['Location']);
-                ?>
-                <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq9&mode=php",1);
-                include_once($path['Location']);
-                ?>
-                <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq10&mode=php",1);
-                include_once($path['Location']);
-                ?>
-                <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq11&mode=php",1);
-                include_once($path['Location']);
-                ?>
-                <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq12&mode=php",1);
-                include_once($path['Location']);
-                ?>
-                <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq13&mode=php",1);
-                include_once($path['Location']);
-                ?>
-                <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq14&mode=php",1);
-                include_once($path['Location']);
-                ?>
-                <?php
-                $path = get_headers(constant('ROOT_URL')."index.php?page=faq15&mode=php",1);
-                include_once($path['Location']);
+                  include_once(build_url('php', 'faq1'));
+                  include_once(build_url('php', 'faq2'));
+                  include_once(build_url('php', 'faq3'));
+                  include_once(build_url('php', 'faq4'));
+                  include_once(build_url('php', 'faq5'));
+                  include_once(build_url('php', 'faq6'));
+                  include_once(build_url('php', 'faq7'));
+                  include_once(build_url('php', 'faq8'));
+                  include_once(build_url('php', 'faq9'));
+                  include_once(build_url('php', 'faq10'));
+                  include_once(build_url('php', 'faq11'));
+                  include_once(build_url('php', 'faq12'));
+                  include_once(build_url('php', 'faq13'));
+                  include_once(build_url('php', 'faq14'));
+                  include_once(build_url('php', 'faq15'));
                 ?>
 
               </div>
@@ -94,14 +52,12 @@
 
         <div class="col-lg-3 border-primary">
           <?php
-          $path = get_headers(constant('ROOT_URL')."index.php?page=right_banner&mode=php",1);
-          include_once($path['Location']);
+          include_once(build_url('php', 'right_banner'));
           ?>
         </div>
       </div>
       <?php
-      $path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
-      include_once($path['Location']);
+        include_once(build_url('php', 'footer'));
       ?>
     </div>
   </body>

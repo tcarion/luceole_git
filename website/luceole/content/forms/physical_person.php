@@ -16,6 +16,7 @@
   }
 </script>
 
+
 <p>
 <i>Une « personnes physique » est, dans l’ordre juridique, tout être
 humain auquel la loi attache des droits et des obligations.</i>
@@ -112,6 +113,7 @@ humain auquel la loi attache des droits et des obligations.</i>
   <legend>Autres détails</legend>
   <div class="col-auto" style="float:left;">
     <label for="iban">Numéro de Compte (IBAN)*</label>
+    <span class="error"> <?php echo $errIBAN ?></span>
     <input type="text" class="form-control" id="iban" name="iban" placeholder="BE10 1234 4567 7898" value="<?php echo $iban?>" required>
   </div>
   <div class="col-auto" style="float:left;">
@@ -135,15 +137,6 @@ humain auquel la loi attache des droits et des obligations.</i>
       <textarea class="form-control" rows="4" name="skills" value:"<?php echo $skills?>"></textarea>
     </div>
   </div>
-  <div class="col-auto" style="width:auto;">
-    <input type="checkbox" class="form-control" id="mailing" name="mailing" style="width:auto;">
-    <label for="mailing" style="width:auto;">Je marque mon accord pour recevoir toute communication y compris </br>
-      les convocations aux AG par voie électronique (facultatif mais recommandé </br>
-      pour limiter les couts administratifs).</label>
-  </div>
-  <div class="col-auto" style="width:auto;">
-    <input type="checkbox" class="form-control" id="agree" name="agree" style="width:auto;" required>
-    <label for="agree" style="width:auto;"> Je soussigné déclare adhérer aux <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_statuts&mode=html" target="_blank">statuts</a> de Lucéole scrl et avoir pris connaissance de son <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_roi&mode=html" target="_blank">règlement d’ordre intérieur</a>*. </label>
-  </div>
+  
 
 </fieldset>

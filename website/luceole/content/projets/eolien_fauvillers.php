@@ -3,18 +3,19 @@
   <head>
     <title>Eolien - Fauvillers</title>
     <?php
-    $path = $_SERVER['DOCUMENT_ROOT'];
-    $path .= "/php_config.php";
-    include_once($path);
-    $path1 = get_headers(constant('ROOT_URL')."index.php?page=header&mode=php",1);
-    include_once($path1['Location']);
+      $path = $_SERVER['DOCUMENT_ROOT'];
+      $path .= "/php_config.php";
+      include_once($path);
+      $path = $_SERVER['DOCUMENT_ROOT'];
+      $path .= "/index_url.php";
+      include_once($path);
+      include_once(build_url('php', 'header'));
     ?>
   </head>
   <body>
     <div class="container">
       <?php
-      $path = get_headers(constant('ROOT_URL')."index.php?page=nav&mode=php",1);
-      include_once($path['Location']);
+        include_once(build_url('php', 'nav'));
       ?>
       <div class="row pages">
         <div class="col-lg-9 border-primary">
@@ -104,8 +105,8 @@
             <div class="col-lg-6 border-primary">
               <div class="schema-projet-habay pages-body" style="text-align:center;">
 
-                <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=schema_implantation_fauvillers&mode=html">
-                <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=schema_implantation_fauvillers&mode=html"
+                <a href="<?php echo build_url('html','schema_implantation_fauvillers');?>">
+                <img src="<?php echo build_url('html','schema_implantation_fauvillers');?>"
                 alt="Schéma d'implantation Habay" style="border-radius: 5px; width:100%; padding-bottom:4px;">
                 </a>
                 <i>Schéma  d'implantaton du projet de Fauvillers</i>
@@ -121,15 +122,13 @@
 
         <div class="col-lg-3 border-primary">
           <?php
-          $path = get_headers(constant('ROOT_URL')."index.php?page=right_banner&mode=php",1);
-          include_once($path['Location']);
+            include_once(build_url('php', 'right_banner'));
           ?>
         </div>
       </div>
 
       <?php
-      $path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
-      include_once($path['Location']);
+        include_once(build_url('php', 'footer'));
       ?>
     </div>
   </body>

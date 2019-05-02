@@ -6,15 +6,16 @@
     $path = $_SERVER['DOCUMENT_ROOT'];
     $path .= "/php_config.php";
     include_once($path);
-    $path1 = get_headers(constant('ROOT_URL')."index.php?page=header&mode=php",1);
-    include_once($path1['Location']);
+    $path = $_SERVER['DOCUMENT_ROOT'];
+    $path .= "/index_url.php";
+    include_once($path);
+    include_once(build_url('php', 'header'));
     ?>
   </head>
   <body>
     <div class="container">
       <?php
-      $path = get_headers(constant('ROOT_URL')."index.php?page=nav&mode=php",1);
-      include_once($path['Location']);
+        include_once(build_url('php', 'nav'));
       ?>
       <div class="row pages">
         <div class="col-lg-9 border-primary">
@@ -25,7 +26,7 @@
             <div class="pages-body">
               <ul>
                 <li>
-                  <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_statuts&mode=html">La coopérative Lucéole scrl</a> est une coopérative citoyenne constituée le 22 octobre 2010 à Habay en
+                  <a href="<?php echo build_url('html', 'coop_statuts');?>">La coopérative Lucéole scrl</a> est une coopérative citoyenne constituée le 22 octobre 2010 à Habay en
                   province du Luxembourg.
                   Elle a été agréée le 10 décembre 2010 par le <a href="https://economie.fgov.be/fr/themes/entreprises/creer-une-entreprise/demarches-pour-creer-une/formes-de-societes/societes-cooperatives/agrement/le-conseil-national-de-la" target="_blank"> Conseil National de la Coopération </a> du Ministère de
                   l’Économie, agrément N°5329.
@@ -67,16 +68,14 @@
 
         <div class="col-lg-3 border-primary">
           <?php
-          $path = get_headers(constant('ROOT_URL')."index.php?page=right_banner&mode=php",1);
-          include_once($path['Location']);
+            include_once(build_url('php', 'right_banner'));
           ?>
         </div>
 
       </div>
 
       <?php
-      $path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
-      include_once($path['Location']);
+        include_once(build_url('php', 'footer'));
       ?>
     </div>
   </body>

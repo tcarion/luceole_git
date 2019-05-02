@@ -98,14 +98,4 @@ les Communes, les établissements publics, les associations sans but lucratif
   <div class="col-lg-12">
     <textarea class="form-control" rows="4" name="skills"></textarea>
   </div>
-  <div class="col-auto" style="width:auto;">
-    <input type="checkbox" class="form-control" id="mailing" name="mailing" style="width:auto;">
-    <label for="mailing" style="width:auto;">Je marque mon accord pour recevoir toute communication y compris </br>
-      les convocations aux AG par voie électronique (facultatif mais recommandé </br>
-      pour limiter les couts administratifs).</label>
-  </div>
-  <div class="col-auto" style="width:auto;">
-    <input type="checkbox" class="form-control" id="agree" name="agree" style="width:auto;" required>
-    <label for="agree" style="width:auto;"> Je soussigné déclare adhérer aux <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_statuts&mode=html" target="_blank">statuts</a> de Lucéole scrl et avoir pris connaissance de son <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=coop_roi&mode=html" target="_blank">règlement d’ordre intérieur</a>*. </label>
-  </div>
 </fieldset>
