@@ -1,10 +1,8 @@
 <div class="card">
-  <div class="card-header" id="heading7">
-    <h5 class="mb-0">
-        <a data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-          Quels sont les risques financiers ?
-        </a>
-     </h5>
+  <div class="card-header" id="heading7" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+    <h6 class="mb-0">
+      Quels sont les risques financiers ? <i class="fa fa-toggle-down"></i>
+    </h6>
   </div>
   <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
     <div class="card-body-faq">

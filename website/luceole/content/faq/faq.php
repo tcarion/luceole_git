@@ -17,7 +17,7 @@
       <?php
         include_once(build_url('php', 'nav'));
       ?>
-      <div class="row pages">
+      <div class="row pages faq">
         <div class="col-lg-9 border-primary">
           <div class="row pages-title">
             <div class="pages-title">

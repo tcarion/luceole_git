@@ -1,10 +1,8 @@
 <div class="card">
-  <div class="card-header" id="heading12">
-    <h5 class="mb-0">
-        <a data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-          L’éolienne, quelle durée de vie ?
-        </a>
-     </h5>
+  <div class="card-header" id="heading12" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+    <h6 class="mb-0">
+      L’éolienne, quelle durée de vie ? <i class="fa fa-toggle-down"></i>
+    </h6>
   </div>
   <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
     <div class="card-body-faq">

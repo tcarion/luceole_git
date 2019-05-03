@@ -1,10 +1,8 @@
 <div class="card">
-  <div class="card-header" id="heading8">
-    <h5 class="mb-0">
-        <a data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-            Où va l’argent de ma/mes parts, dans quel(s) projet(s) ?
-        </a>
-     </h5>
+  <div class="card-header" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+    <h6 class="mb-0">
+      Où va l’argent de ma/mes parts, dans quel(s) projet(s) ? <i class="fa fa-toggle-down"></i>
+    </h6>
   </div>
   <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
     <div class="card-body-faq">

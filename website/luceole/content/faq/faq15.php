@@ -1,10 +1,8 @@
 <div class="card">
-  <div class="card-header" id="heading15">
-    <h5 class="mb-0">
-        <a data-toggle="collapse" data-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
-          J’ai une autre question
-        </a>
-     </h5>
+  <div class="card-header" id="heading15" data-toggle="collapse" data-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+    <h6 class="mb-0">
+      J’ai une autre question <i class="fa fa-toggle-down"></i>
+    </h6>
   </div>
   <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordion">
     <div class="card-body-faq">

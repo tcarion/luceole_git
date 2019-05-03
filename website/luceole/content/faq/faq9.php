@@ -1,10 +1,8 @@
 <div class="card">
-  <div class="card-header" id="heading9">
-    <h5 class="mb-0">
-        <a data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-            Qu’est-ce que ça rapporte et à quoi servent les bénéfices réalisés?
-        </a>
-     </h5>
+  <div class="card-header" id="heading9" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+    <h6 class="mb-0">
+      Qu’est-ce que ça rapporte et à quoi servent les bénéfices réalisés? <i class="fa fa-toggle-down"></i>
+    </h6>
   </div>
   <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
     <div class="card-body-faq">

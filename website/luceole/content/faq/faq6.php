@@ -1,10 +1,8 @@
 <div class="card">
-  <div class="card-header" id="heading6">
-    <h5 class="mb-0">
-        <a data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-          Est-ce que je peux me retirer quand je veux et me faire rembourser ma/mes part(s) ?
-        </a>
-     </h5>
+  <div class="card-header" id="heading6" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+    <h6 class="mb-0">
+      Est-ce que je peux me retirer quand je veux et me faire rembourser ma/mes part(s) ? <i class="fa fa-toggle-down"></i>
+    </h6>
   </div>
   <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
     <div class="card-body-faq">

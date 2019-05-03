@@ -114,7 +114,7 @@
                         leurs aspirations et besoins économiques, sociaux et culturels communs.
                       </p>
                       <!-- Link -->
-                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
+                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fa fa-angle-double-right"></i></h6></a>
 
                     </div>
                   </div>
@@ -136,7 +136,7 @@
                         lesquels ne recherchent qu’un bénéfice patrimonial limité. Lucéole scrl cherchera plutôt à favoriser la
                       </p>
                       <!-- Link -->
-                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
+                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fa fa-angle-double-right"></i></h6></a>
 
                     </div>
                   </div>
@@ -159,7 +159,7 @@
                         de proposer des prix compétitifs pour les coopérateurs des coopératives associées.
                       </p>
                       <!-- Link -->
-                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
+                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fa fa-angle-double-right"></i></h6></a>
 
                     </div>
                   </div>

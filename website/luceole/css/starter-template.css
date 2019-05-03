@@ -105,7 +105,7 @@ hr {
 }
 
 .card-row .card {
-  height: 300px;
+  height: 320px;
 }
 
 .card-title {
@@ -237,7 +237,7 @@ hr {
   font-size: 10px;
 }
 
-h6 i {
+.faq h6 i {
   position: absolute;
   right: 10px;
 }

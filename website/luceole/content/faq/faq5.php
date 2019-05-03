@@ -1,10 +1,8 @@
 <div class="card">
-  <div class="card-header" id="heading5">
-    <h5 class="mb-0">
-        <a data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-            Est-il possible de transmettre mes parts à mes enfants ou à d’autres personnes?
-        </a>
-     </h5>
+  <div class="card-header" id="heading5" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+    <h6 class="mb-0">
+      Est-il possible de transmettre mes parts à mes enfants ou à d’autres personnes? <i class="fa fa-toggle-down"></i>
+    </h6>
   </div>
   <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
     <div class="card-body-faq">
