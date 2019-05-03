@@ -6,15 +6,16 @@
     $path = $_SERVER['DOCUMENT_ROOT'];
     $path .= "/php_config.php";
     include_once($path);
-    $path1 = get_headers(constant('ROOT_URL')."index.php?page=header&mode=php",1);
-    include_once($path1['Location']);
+    $path = $_SERVER['DOCUMENT_ROOT'];
+    $path .= "/index_url.php";
+    include_once($path);
+    include_once(build_url('php', 'header'));
     ?>
   </head>
   <body>
     <div class="container">
       <?php
-      $path = get_headers(constant('ROOT_URL')."index.php?page=nav&mode=php",1);
-      include_once($path['Location']);
+        include_once(build_url('php', 'nav'));
       ?>
       <div class="row pages">
         <div class="col-lg-9 border-primary">
@@ -29,7 +30,7 @@
                 l'électricité.
               </p>
               <p>
-                <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=cociter_logo&mode=html" style="float:right; width:30%;padding-left:20px;">
+                <img src="<?php echo build_url('html', 'cociter_logo');?>" style="float:right; width:30%;padding-left:20px;">
                 En très synthétique, les coopérateurs sont co-propriétaires des moyens de production via leur(s) part(s) dans les coopératives et se fournissent en électricité auprès de COCITER, fournisseur
                 coopératif qui achète la production des coopératives de production.
               </p>
@@ -62,14 +63,12 @@
 
         <div class="col-lg-3 border-primary">
           <?php
-          $path = get_headers(constant('ROOT_URL')."index.php?page=right_banner&mode=php",1);
-          include_once($path['Location']);
+            include_once(build_url('php', 'right_banner'));
           ?>
         </div>
       </div>
       <?php
-      $path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
-      include_once($path['Location']);
+        include_once(build_url('php', 'footer'));
       ?>
     </div>
   </body>

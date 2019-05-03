@@ -3,18 +3,19 @@
   <head>
     <title>Lettres d'information</title>
     <?php
-    $path = $_SERVER['DOCUMENT_ROOT'];
-    $path .= "/php_config.php";
-    include_once($path);
-    $path1 = get_headers(constant('ROOT_URL')."index.php?page=header&mode=php",1);
-    include_once($path1['Location']);
+      $path = $_SERVER['DOCUMENT_ROOT'];
+      $path .= "/php_config.php";
+      include_once($path);
+      $path = $_SERVER['DOCUMENT_ROOT'];
+      $path .= "/index_url.php";
+      include_once($path);
+      include_once(build_url('php', 'header'));
     ?>
   </head>
   <body>
     <div class="container">
       <?php
-      $path = get_headers(constant('ROOT_URL')."index.php?page=nav&mode=php",1);
-      include_once($path['Location']);
+        include_once(build_url('php', 'nav'));
       ?>
       <div class="row pages">
         <div class="col-lg-9 border-primary">
@@ -149,23 +150,23 @@
               </p>
 
               <div class="illustrations" style="text-align:center;">
-                <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_1&mode=html">
-                <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_1&mode=html"
+                <a href="<?php echo build_url('html', 'luceolien_1');?>">
+                <img src="<?php echo build_url('html', 'luceolien_1');?>"
                 alt="Schéma d'implantation Habay" style="border-radius: 5px; width:45%; padding:4px 4px 4px 4px;float:center;">
                 </a>
-                <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_2&mode=html">
-                <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_2&mode=html"
+                <a href="<?php echo build_url('html', 'luceolien_2');?>">
+                <img src="<?php echo build_url('html', 'luceolien_2');?>"
                 alt="Schéma d'implantation Habay" style="border-radius: 5px; width:45%; padding:4px 4px 4px 4px;float:center;">
                 </a>
               </div>
 
               <div class="illustrations" style="text-align:center;">
-                <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_3&mode=html">
-                <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_3&mode=html"
+                <a href="<?php echo build_url('html', 'luceolien_3');?>">
+                <img src="<?php echo build_url('html', 'luceolien_3');?>"
                 alt="Schéma d'implantation Habay" style="border-radius: 5px; width:45%; padding:4px 4px 4px 4px;float:center;">
                 </a>
-                <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_4&mode=html">
-                <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_4&mode=html"
+                <a href="<?php echo build_url('html', 'luceolien_4');?>">
+                <img src="<?php echo build_url('html', 'luceolien_4');?>"
                 alt="Schéma d'implantation Habay" style="border-radius: 5px; width:45%; padding:4px 4px 4px 4px;float:center;">
                 </a>
               </div>
@@ -178,19 +179,19 @@ Ils feront peut-être l'objet de fouilles ultérieures ou d'un panneau d'informa
 
 
               <div class="illustrations" style="text-align:center;">
-                <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_5&mode=html">
-                <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_5&mode=html"
+                <a href="<?php echo build_url('html', 'luceolien_5');?>">
+                <img src="<?php echo build_url('html', 'luceolien_5');?>"
                 alt="Schéma d'implantation Habay" style="border-radius: 5px; width:45%; padding:4px 4px 4px 4px;float:center;">
                 </a>
               </div>
 
               <div class="illustrations" style="text-align:center;">
-                <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_6&mode=html">
-                <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_6&mode=html"
+                <a href="<?php echo build_url('html', 'luceolien_6');?>">
+                <img src="<?php echo build_url('html', 'luceolien_6');?>"
                 alt="Schéma d'implantation Habay" style="border-radius: 5px; width:45%; padding:4px 4px 10px 4px;float:center;">
                 </a>
-                <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_7&mode=html">
-                <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_7&mode=html"
+                <a href="<?php echo build_url('html', 'luceolien_7');?>">
+                <img src="<?php echo build_url('html', 'luceolien_7');?>"
                 alt="Schéma d'implantation Habay" style="border-radius: 5px; width:45%; padding:4px 4px 10px 4px;float:center;">
                 </a>
               </div>
@@ -250,22 +251,22 @@ Ils feront peut-être l'objet de fouilles ultérieures ou d'un panneau d'informa
             <div class="pages-body">
                   <ul>
                     <li>
-                      <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_n_23&mode=html">Lucéolion 23 - Mars 2019</a>
+                      <a href="<?php echo build_url('html', 'luceolien_n_23');?>">Lucéolien 23 - Mars 2019</a>
                     </li>
                     <li>
-                      <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_n_22&mode=html">Lucéolion 22 - Décembre 2018</a>
+                      <a href="<?php echo build_url('html', 'luceolien_n_22');?>">Lucéolien 22 - Décembre 2018</a>
                     </li>
                     <li>
-                      <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_n_21&mode=html">Lucéolion 21 - Octobre 2018</a>
+                      <a href="<?php echo build_url('html', 'luceolien_n_21');?>">Lucéolien 21 - Octobre 2018</a>
                     </li>
                     <li>
-                      <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_n_20&mode=html">Lucéolion 20 - Septembre 2018</a>
+                      <a href="<?php echo build_url('html', 'luceolien_n_20');?>">Lucéolien 20 - Septembre 2018</a>
                     </li>
                     <li>
-                      <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_n_19&mode=html">Lucéolion 19 - Août 2018</a>
+                      <a href="<?php echo build_url('html', 'luceolien_n_19');?>">Lucéolien 19 - Août 2018</a>
                     </li>
                     <li>
-                      <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=luceolien_n_18&mode=html">Lucéolion 18 - Juin 2018</a>
+                      <a href="<?php echo build_url('html', 'luceolien_n_18');?>">Lucéolien 18 - Juin 2018</a>
                     </li>
                   </ul>
               </div>
@@ -275,14 +276,12 @@ Ils feront peut-être l'objet de fouilles ultérieures ou d'un panneau d'informa
 
         <div class="col-lg-3 border-primary">
           <?php
-          $path = get_headers(constant('ROOT_URL')."index.php?page=right_banner&mode=php",1);
-          include_once($path['Location']);
+            include_once(build_url('php', 'right_banner'));
           ?>
         </div>
       </div>
       <?php
-      $path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
-      include_once($path['Location']);
+        include_once(build_url('php', 'footer'));
       ?>
     </div>
   </body>

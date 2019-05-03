@@ -9,36 +9,36 @@
         <div class="row">
           <div class="col-lg-6 foot-img-cells">
             <a href="https://www.rescoop-wallonie.be/" target="_blank">
-              <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=rescoop_logo&mode=html" class="foot-img">
+              <img src="<?php echo build_url('html', 'rescoop_logo');?>" class="foot-img">
             </a>
           </div>
           <div class="col-lg-6 foot-img-cells">
             <a href= "https://www.cociter.be/" target="_blank">
-              <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=cociter_logo&mode=html" class="foot-img">
+              <img src="<?php echo build_url('html', 'cociter_logo');?>" class="foot-img">
             </a>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-6 foot-img-cells">
             <a href="https://ventsdusud.be/" target="_blank">
-              <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=vds_logo&mode=html" class="foot-img">
+              <img src="<?php echo build_url('html', 'vds_logo');?>" class="foot-img">
             </a>
           </div>
           <div class="col-lg-6 foot-img-cells">
             <a href="http://www.apere.org/" target="_blank">
-              <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=apere_logo&mode=html" class="foot-img">
+              <img src="<?php echo build_url('html', 'apere_logo');?>" class="foot-img">
             </a>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-6 foot-img-cells">
             <a href= "http://www.saw-b.be/spip/index.php" target="_blank">
-              <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=saw_b_logo&mode=html" class="foot-img">
+              <img src="<?php echo build_url('html', 'saw_b_logo');?>" class="foot-img">
             </a>
           </div>
           <div class="col-lg-6 foot-img-cells">
             <a href="http://www.credal.be/" target="_blank">
-              <img src="<?php echo constant('ROOT_URL'); ?>index.php?page=credal_logo&mode=html" class="foot-img">
+              <img src="<?php echo build_url('html', 'credal_logo');?>" class="foot-img">
             </a>
           </div>
         </div>

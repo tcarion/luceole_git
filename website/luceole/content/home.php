@@ -3,11 +3,15 @@
 <head>
   <title>Accueil</title>
   <?php
-  $path = $_SERVER['DOCUMENT_ROOT'];
-  $path .= "/php_config.php";
-  include_once($path);
-  $path1 = get_headers(constant('ROOT_URL')."index.php?page=header&mode=php",1);
-  include_once($path1['Location']);
+    $path = $_SERVER['DOCUMENT_ROOT'];
+    $path .= "/php_config.php";
+    include_once($path);
+    $path = $_SERVER['DOCUMENT_ROOT'];
+    $path .= "/index_url.php";
+    include_once($path);
+    include_once(build_url('php', 'header'));
+  //$path1 = constant('ROOT_URL')."index.php?page=header&mode=php";
+  //include_once($path1['Location']);
   ?>
 </head>
 
@@ -18,10 +22,11 @@
     //$path = constant('DOC_ROOT')."/luceole/content/nav.php";
     //include_once($path);
     //echo constant('ROOT_URL')."index.php?page=home";
-    $path = get_headers(constant('ROOT_URL')."index.php?page=nav&mode=php",1);
+    //$path = get_headers(constant('ROOT_URL')."index.php?page=nav&mode=php",1);
     //echo $output['Location'];
-    include_once($path['Location']);
+    //include_once($path['Location']);
     //print_r($output);
+    include_once(build_url('php', 'nav'));
     ?>
     <!-- Module page d'Accueil -->
     <!-- Row 1 : contenu sauf navbar et footer -->
@@ -41,28 +46,32 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img  src="<?php echo constant('ROOT_URL'); ?>index.php?page=car_fauvillers&mode=html"  alt="First slide" style="border-radius: 5px;height: 400px; width:100%;">
+                  <div class="" id="player" style="border-radius: 5px;height: 400px;">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img  src="<?php echo build_url('html', 'car_fauvillers');?>"  alt="First slide" style="border-radius: 5px;height: 400px; width:100%;">
                   <div class="carousel-caption">
                     <h5>Projet Eolien - Fauvillers</h5>
                     <p>Les travaux de chemins ont débuté !</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img  src="<?php echo constant('ROOT_URL'); ?>index.php?page=car_hose&mode=html"  alt="Second slide" style="border-radius: 5px;height: 400px;width:100%;">
+                  <img  src="<?php echo build_url('html', 'car_hose');?>"  alt="Second slide" style="border-radius: 5px;height: 400px;width:100%;">
                   <div class="carousel-caption">
                     <h5>Projet Hydraulique - Hose</h5>
                     <p>Le site de Marcinelle II</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img  src="<?php echo constant('ROOT_URL'); ?>index.php?page=car_vda&mode=html"  alt="Third slide" style="border-radius: 5px;height: 400px;width:100%;">
+                  <img  src="<?php echo build_url('html', 'car_vda');?>"  alt="Third slide" style="border-radius: 5px;height: 400px;width:100%;">
                   <div class="carousel-caption">
                     <h5>Site Eolien - Vents d'Autelbas</h5>
                     <p>Les éoliennes de Vents d'Autelbas tournent à plein fouets</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="<?php echo constant('ROOT_URL'); ?>index.php?page=car_habay&mode=html"  alt="Fourth slide" style="border-radius: 5px;height: 400px;width:100%;">
+                  <img class="d-block w-100" src="<?php echo build_url('html', 'car_habay');?>"  alt="Fourth slide" style="border-radius: 5px;height: 400px;width:100%;">
                   <div class="carousel-caption">
                     <h5>Projet Eolien - Habay</h5>
                     <p>Un schéma du site d'implantation du projet éolien de Habay</p>
@@ -90,7 +99,7 @@
                 <div class="col-lg-4" style="padding-right:5px;">
                   <div class="card">
                     <div class="view overlay">
-                      <img class="card-img-top" src="<?php echo constant('ROOT_URL'); ?>index.php?page=header_logo&mode=html" alt="Card image cap">
+                      <img class="card-img-top" src="<?php echo build_url('html', 'header_logo');?>" alt="Card image cap">
                       <a>
                         <div class="mask rgba-white-slight"></div>
                       </a>
@@ -105,7 +114,7 @@
                         leurs aspirations et besoins économiques, sociaux et culturels communs.
                       </p>
                       <!-- Link -->
-                      <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=vision_globale&mode=html" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
+                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
 
                     </div>
                   </div>
@@ -113,7 +122,7 @@
                 <div class="col-lg-4" style="padding-right:5px; padding-left:5px;">
                   <div class="card">
                     <div class="view overlay">
-                      <img class="card-img-top" src="<?php echo constant('ROOT_URL'); ?>index.php?page=rescoop_logo&mode=html" alt="Card image cap">
+                      <img class="card-img-top" src="<?php echo build_url('html', 'rescoop_logo');?>" alt="Card image cap">
                       <a>
                         <div class="mask rgba-white-slight"></div>
                       </a>
@@ -127,7 +136,7 @@
                         lesquels ne recherchent qu’un bénéfice patrimonial limité. Lucéole scrl cherchera plutôt à favoriser la
                       </p>
                       <!-- Link -->
-                      <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=vision_globale&mode=html" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
+                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
 
                     </div>
                   </div>
@@ -135,7 +144,7 @@
                 <div class="col-lg-4" style="padding-left:5px;">
                   <div class="card">
                     <div class="view overlay">
-                      <img class="card-img-top" src="<?php echo constant('ROOT_URL'); ?>index.php?page=cociter_logo&mode=html" alt="Card image cap">
+                      <img class="card-img-top" src="<?php echo build_url('html', 'cociter_logo');?>" alt="Card image cap">
                       <a>
                         <div class="mask rgba-white-slight"></div>
                       </a>
@@ -150,7 +159,7 @@
                         de proposer des prix compétitifs pour les coopérateurs des coopératives associées.
                       </p>
                       <!-- Link -->
-                      <a href="<?php echo constant('ROOT_URL'); ?>index.php?page=vision_globale&mode=html" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
+                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
 
                     </div>
                   </div>
@@ -161,8 +170,9 @@
             <!-- Col3 : Bandant gauche vertical commun a toutes les pages (evenements, articles, liens...) -->
             <div class="col-lg-3 border-primary">
               <?php
-              $path = get_headers(constant('ROOT_URL')."index.php?page=right_banner&mode=php",1);
-              include_once($path['Location']);
+              //$path = get_headers(constant('ROOT_URL')."index.php?page=right_banner&mode=php",1);
+              //include_once($path['Location']);
+              include_once(build_url('php', 'right_banner'));
               ?>
               <!-- Calendrier des évènements à venir -->
               <!-- <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
@@ -175,10 +185,11 @@
       </div> <!-- main row -->
       <!-- /container -->
 
-      <?php
-      $path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
-      include_once($path['Location']);
-      ?>
-    </div>
-  </body>
-  </html>
+        <?php
+        //$path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
+        //include_once($path['Location']);
+        include_once(build_url('php', 'footer'));
+        ?>
+        </div>
+      </body>
+      </html>
