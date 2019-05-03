@@ -1,10 +1,8 @@
 <div class="card">
-  <div class="card-header" id="heading2">
-    <h5 class="mb-0">
-        <a data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-          Puis-je m’impliquer dans la vie de la coopérative?
-        </a>
-     </h5>
+  <div class="card-header" id="heading2" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+    <h6 class="mb-0">
+            Puis-je m’impliquer dans la vie de la coopérative? <i class="fa fa-toggle-down"></i>
+     </h6>
   </div>
   <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
     <div class="card-body-faq">

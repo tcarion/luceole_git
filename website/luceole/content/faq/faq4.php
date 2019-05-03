@@ -1,10 +1,8 @@
 <div class="card">
-  <div class="card-header" id="heading4">
-    <h5 class="mb-0">
-        <a data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-          Je n’habite pas dans la région d’ancrage de Lucéole (Habay-Fauvillers), puis-je devenir coopératrice/eur ?
-        </a>
-     </h5>
+  <div class="card-header" id="heading4" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+    <h6 class="mb-0">
+      Je n’habite pas dans la région d’ancrage de Lucéole (Habay-Fauvillers), puis-je devenir coopératrice/eur ? <i class="fa fa-toggle-down"></i>
+    </h6>
   </div>
   <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
     <div class="card-body-faq">

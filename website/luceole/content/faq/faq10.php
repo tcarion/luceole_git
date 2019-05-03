@@ -1,10 +1,8 @@
 <div class="card">
-  <div class="card-header" id="heading10">
-    <h5 class="mb-0">
-        <a data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-            Les dividendes que je toucherai sont-ils soumis à l’impôt ?
-        </a>
-     </h5>
+  <div class="card-header" id="heading10" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+    <h6 class="mb-0">
+      Les dividendes que je toucherai sont-ils soumis à l’impôt ? <i class="fa fa-toggle-down"></i>
+    </h6>
   </div>
   <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
     <div class="card-body-faq">

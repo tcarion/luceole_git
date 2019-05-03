@@ -1,10 +1,8 @@
 <div class="card">
-  <div class="card-header" id="heading11">
-    <h5 class="mb-0">
-        <a data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-          L’éolienne expliquée autrement….
-        </a>
-     </h5>
+  <div class="card-header" id="heading11" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+    <h6 class="mb-0">
+      L’éolienne expliquée autrement…. <i class="fa fa-toggle-down"></i>
+    </h6>
   </div>
   <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
     <div class="card-body-faq">

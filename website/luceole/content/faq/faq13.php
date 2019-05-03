@@ -1,10 +1,8 @@
 <div class="card">
-  <div class="card-header" id="heading13">
-    <h5 class="mb-0">
-        <a data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-          L’éolienne, quelle empreinte carbone ?
-        </a>
-     </h5>
+  <div class="card-header" id="heading13" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+    <h6 class="mb-0">
+      L’éolienne, quelle empreinte carbone ? <i class="fa fa-toggle-down"></i>
+    </h6>
   </div>
   <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
     <div class="card-body-faq">

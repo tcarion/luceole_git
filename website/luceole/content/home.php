@@ -77,6 +77,10 @@
                     <p>Un schéma du site d'implantation du projet éolien de Habay</p>
                   </div>
                 </div>
+                <div class="carousel-item">
+                  <div class="" id="player" style="border-radius: 5px;height: 400px;">
+                  </div>
+                </div>
               </div> <!-- <div class="carousel-inner"> -->
                 <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -110,7 +114,7 @@
                         leurs aspirations et besoins économiques, sociaux et culturels communs.
                       </p>
                       <!-- Link -->
-                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
+                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fa fa-angle-double-right"></i></h6></a>
 
                     </div>
                   </div>
@@ -132,7 +136,7 @@
                         lesquels ne recherchent qu’un bénéfice patrimonial limité. Lucéole scrl cherchera plutôt à favoriser la
                       </p>
                       <!-- Link -->
-                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
+                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fa fa-angle-double-right"></i></h6></a>
 
                     </div>
                   </div>
@@ -155,7 +159,7 @@
                         de proposer des prix compétitifs pour les coopérateurs des coopératives associées.
                       </p>
                       <!-- Link -->
-                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fas fa-angle-double-right"></i></h6></a>
+                      <a href="<?php echo build_url('html', 'coop_carte_id');?>" class="black-text d-flex justify-content-end"><h6>En savoir plus <i class="fa fa-angle-double-right"></i></h6></a>
 
                     </div>
                   </div>
@@ -172,14 +176,14 @@
               ?>
               <!-- Calendrier des évènements à venir -->
               <!-- <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
-                <div class="col-lg-12">
-                  <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=samuel.courtois93%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FLuxembourg"
-                  style="border-width:0; padding-top:0px;" width="100%" height="400" frameborder="0" scrolling="yes"></iframe>
-                </div>
-              </div> -->
-            </div> <!-- col-lg-3 -->
-          </div> <!-- main row -->
-         <!-- /container -->
+              <div class="col-lg-12">
+              <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=samuel.courtois93%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FLuxembourg"
+              style="border-width:0; padding-top:0px;" width="100%" height="400" frameborder="0" scrolling="yes"></iframe>
+            </div>
+          </div> -->
+        </div> <!-- col-lg-3 -->
+      </div> <!-- main row -->
+      <!-- /container -->
 
         <?php
         //$path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
