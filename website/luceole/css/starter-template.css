@@ -235,3 +235,12 @@ hr {
 .mentions-legales {
   font-size: 10px;
 }
+
+h6 i {
+  position: absolute;
+  right: 10px;
+}
+
+.card .card-header {
+  cursor: pointer;
+});

@@ -6,7 +6,7 @@
   $path = $_SERVER['DOCUMENT_ROOT'];
   $path .= "/php_config.php";
   include_once($path);
-  $path1 = constant('ROOT_URL')."index.php?page=header&mode=php";
+  $path1 = get_headers(constant('ROOT_URL')."index.php?page=header&mode=php",1);
   include_once($path1['Location']);
   ?>
 </head>
@@ -36,13 +36,11 @@
                 <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#homeCarousel" data-slide-to="1"></li>
                 <li data-target="#homeCarousel" data-slide-to="2"></li>
+                <li data-target="#homeCarousel" data-slide-to="3"></li>
+                <li data-target="#homeCarousel" data-slide-to="4"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <div class="" id="player" style="border-radius: 5px;height: 400px;">
-                  </div>
-                </div>
-                <div class="carousel-item">
                   <img  src="<?php echo constant('ROOT_URL'); ?>index.php?page=car_fauvillers&mode=html"  alt="First slide" style="border-radius: 5px;height: 400px; width:100%;">
                   <div class="carousel-caption">
                     <h5>Projet Eolien - Fauvillers</h5>
@@ -68,6 +66,10 @@
                   <div class="carousel-caption">
                     <h5>Projet Eolien - Habay</h5>
                     <p>Un schéma du site d'implantation du projet éolien de Habay</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="" id="player" style="border-radius: 5px;height: 400px;">
                   </div>
                 </div>
               </div> <!-- <div class="carousel-inner"> -->
@@ -164,19 +166,19 @@
               ?>
               <!-- Calendrier des évènements à venir -->
               <!-- <div class="row" style="background-color:white; border-radius: 5px; margin-top:10px">
-                <div class="col-lg-12">
-                  <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=samuel.courtois93%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FLuxembourg"
-                  style="border-width:0; padding-top:0px;" width="100%" height="400" frameborder="0" scrolling="yes"></iframe>
-                </div>
-              </div> -->
-            </div> <!-- col-lg-3 -->
-          </div> <!-- main row -->
-         <!-- /container -->
+              <div class="col-lg-12">
+              <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=samuel.courtois93%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FLuxembourg"
+              style="border-width:0; padding-top:0px;" width="100%" height="400" frameborder="0" scrolling="yes"></iframe>
+            </div>
+          </div> -->
+        </div> <!-- col-lg-3 -->
+      </div> <!-- main row -->
+      <!-- /container -->
 
-        <?php
-        $path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
-        include_once($path['Location']);
-        ?>
-        </div>
-      </body>
-      </html>
+      <?php
+      $path = get_headers(constant('ROOT_URL')."index.php?page=footer&mode=php",1);
+      include_once($path['Location']);
+      ?>
+    </div>
+  </body>
+  </html>

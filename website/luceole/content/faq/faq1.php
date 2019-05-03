@@ -1,10 +1,8 @@
 <div class="card">
-  <div class="card-header" id="heading1">
-    <h5 class="mb-0">
-        <a data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-            C’est quoi une vraie coopérative citoyenne ?
-        </a>
-     </h5>
+  <div class="card-header" id="heading1" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+    <h6 class="mb-0">
+            C’est quoi une vraie coopérative citoyenne ? <i class="fa fa-toggle-down"></i>
+     </h6>
   </div>
   <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
     <div class="card-body-faq">
